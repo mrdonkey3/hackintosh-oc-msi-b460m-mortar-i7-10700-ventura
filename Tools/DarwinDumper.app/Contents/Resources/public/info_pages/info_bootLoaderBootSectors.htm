@@ -1,0 +1,18 @@
+<div id="helpTitleBar"><label class="dropDownTitleText">Information: Boot Loader Detect & Boot Sectors</label></div>
+<p class="dropDownBody">This runs a shell script to get an overview of the structure of the local disks and partitions using the system tool diskutil.</p>
+<p class="dropDownBody">The boot sector of each disk and each partition are read and an attempt is made to identify what is there. All readable boot sectors are written to a file named with the disk number, Manufactuer/model and size and saved in the latest dump/Disk/Boot Sectors folder.</p>
+<p class="dropDownBody">UEFI boot files, bootloader Stage 2 files and any legacy code in the MBR/PBR are searched for and an attempt is made to identify them, before being listed in individual files named by the disk identifier where the content was found and saved in the latest dump/Boot Loaders folder.</p>
+<p class="dropDownBody">While scanning EFI System partitions, a current OpenCore log file is now also searched for.</p>
+<p class="dropDownBody">Note: APFS Containers are not scanned.</p>
+<table width="425" border="0">
+    <tr>
+        <th width="50" class="dropDownTableBodyBoldNote">Note</td>
+        <td width="325" class="dropDownTableBodyNote">When SIP File Protection is enabled, dumping boot sectors of non-APFS containers and disks which are not APFS physical stores may fail when running from DarwinDumper via the graphical interface. However, it's been known to succeed when using DarwinDumper from the command line.</td>
+    </tr>
+</table>
+<table width="425" border="0">
+    <tr>
+        <th width="50" class="dropDownTableBodyBoldNote">Note</td>
+        <td width="325" class="dropDownTableBodyNote">This scan requires root privileges.</td>
+    </tr>
+</table>

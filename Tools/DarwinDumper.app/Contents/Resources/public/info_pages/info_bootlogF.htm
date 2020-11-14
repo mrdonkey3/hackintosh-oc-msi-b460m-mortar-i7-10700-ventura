@@ -1,0 +1,19 @@
+<div id="helpTitleBar"><label class="dropDownTitleText">Information: Boot (Firmware) Log</label></div>
+<p class="dropDownBody">This option extracts either the Chameleon, Clover or Ozmosis bootlog from the IORegistry and saves it to a file named XXXXX_BootLog.txt, where XXXXX is the name, and possibly revision, of the bootloader. This file is saved in the latest dump/BootLog_Firmware folder.</p>
+<p class="dropDownBody">The logs are dumped using the bdmesg tool by Kabyl, since modified by JrCs from an idea by STLVNUB.</p>
+<table width="425" border="0">
+    <tr>
+        <th width="50" class="dropDownTableBodyBold">Source</td>
+        <td width="325" class="dropDownTableBody"><a href="http://bit.ly/19GbLTw" target="_blank">Sourceforge - CloverPackage</a></td>
+    </tr>
+</table>
+<p class="dropDownBody">If booting with OpenCore and there is a log available in either the Data hub or in a UEFI variable then this scan will extract it.</p>
+<p class="dropDownBody">If OpenCore logging is set to write to file then you can get that by running the 'Bootloader Detect & Boot Sectors' scan.</p>
+
+<table width="425" border="0">
+    <tr>
+        <th width="50" class="dropDownTableBodyBold">Note</td>
+        <td width="325" class="dropDownTableBody">OpenCore logging will have to have been enabled by the user. Consult the <a href="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf" target="_blank">Configuration PDF</a> for details.</td>
+    </tr>
+</table>
+<p class="dropDownBody"></p>

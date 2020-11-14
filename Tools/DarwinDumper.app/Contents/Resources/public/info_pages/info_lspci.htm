@@ -1,0 +1,30 @@
+<div id="helpTitleBar"><label class="dropDownTitleText">Information: LSPCI</label></div>
+<p class="dropDownBody">Three things happen here.</p>
+<p class="dropDownBody">First, <a href="https://www.insanelymac.com/forum/topic/282794-darwindumper/?do=findComment&comment=2718533" target="_blank">Slice's signed version of DirectHW.kext<a/> is installed</p>
+<table width="425" border="0">
+    <tr>
+        <th width="50" class="dropDownTableBodyBold">Source</td>
+        <td width="325" class="dropDownTableBody"><a href="https://github.com/CloverHackyColor/directhw" target="_blank">CloverHackyColor DirectHW Fork</a></td>
+    </tr>
+</table>
+<p class="dropDownBody">Second, pci-ids database (included with DarwinDumper) is checked to see if it's more than 7 days old. If yes AND you have an internet connection, the latest version of the database is downloaded.</p>
+<p class="dropDownBody">Third, lspci tool is run four times, each time producing a different output<br>-nnvt, -M, -nnvv, -nnvvbxxx</p>
+<table width="425" border="0">
+    <tr>
+        <th width="50" class="dropDownTableBodyBold">Source</td>
+        <td width="325" class="dropDownTableBody"><a href="https://git.kernel.org/pub/scm/utils/pciutils/pciutils.git" target="_blank">pciutils at git.kernel.org</a></td>
+    </tr>
+</table>
+<p class="dropDownBody">Four files are saved in the latest dump/LSPCI folder:<br>
+lspci (nnvv).txt<br>
+lspci detailed (nnvvbxxxx).txt<br>
+lspci map (M).txt<br>
+lspci tree (nnvvt).txt<br>
+</p>
+
+<table width="425" border="0">
+    <tr>
+        <th width="50" class="dropDownTableBodyBoldNote">Note</td>
+        <td width="325" class="dropDownTableBodyNote">Root privileges are required to install the DirectHW.kext.</td>
+    </tr>
+</table>

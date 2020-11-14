@@ -1,0 +1,5 @@
+/EFI/Clover/Boot/BootX64.efi
+/EFI/Clover/Boot/BootIA32.efi
+/EFI/Clover/Boot/CloverX64.efi
+/EFI/Microsoft/Boot/bootmgfw.efi
+/EFI/OC/Bootstrap/Bootstrap.efi

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="be344e86-d570-4354-80b9-37021b2a0522" name="Default Changelist" comment="首次提交.">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kHe3Btlan0N36zuL43qLZplrdC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be344e86-d570-4354-80b9-37021b2a0522" name="Default Changelist" comment="" />
+      <created>1605361742344</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605361742344</updated>
+      <workItem from="1605361743359" duration="1581000" />
+      <workItem from="1605363650391" duration="439000" />
+      <workItem from="1605364099917" duration="562000" />
+      <workItem from="1605364670818" duration="567000" />
+      <workItem from="1605365428779" duration="69000" />
+      <workItem from="1605365736787" duration="1806000" />
+      <workItem from="1605367611653" duration="678000" />
+    </task>
+    <task id="LOCAL-00001" summary="首次提交.">
+      <created>1605361954794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605361954794</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="首次提交." />
+    <option name="LAST_COMMIT_MESSAGE" value="首次提交." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="450" y="249" width="1663" height="974" key="DiffContextDialog" timestamp="1605363637387">
+      <screen x="0" y="25" width="2560" height="1330" />
+    </state>
+    <state x="450" y="249" width="1663" height="974" key="DiffContextDialog/0.25.2560.1330@0.25.2560.1330" timestamp="1605363637387" />
+    <state x="826" y="641" key="Github.CreateGistDialog" timestamp="1605362265805">
+      <screen x="0" y="25" width="2560" height="1330" />
+    </state>
+    <state x="826" y="641" key="Github.CreateGistDialog/0.25.2560.1330@0.25.2560.1330" timestamp="1605362265805" />
+    <state x="755" y="619" width="514" height="254" key="Github.ShareDialog" timestamp="1605362251317">
+      <screen x="0" y="25" width="2560" height="1330" />
+    </state>
+    <state x="755" y="619" width="514" height="254" key="Github.ShareDialog/0.25.2560.1330@0.25.2560.1330" timestamp="1605362251317" />
+    <state x="547" y="391" key="SettingsEditor" timestamp="1605365374206">
+      <screen x="0" y="25" width="2560" height="1330" />
+    </state>
+    <state x="547" y="391" key="SettingsEditor/0.25.2560.1330@0.25.2560.1330" timestamp="1605365374206" />
+    <state x="355" y="314" key="Vcs.Push.Dialog.v2" timestamp="1605366947118">
+      <screen x="0" y="25" width="2560" height="1330" />
+    </state>
+    <state x="355" y="314" key="Vcs.Push.Dialog.v2/0.25.2560.1330@0.25.2560.1330" timestamp="1605366947118" />
+    <state x="462" y="479" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605365924511">
+      <screen x="0" y="25" width="2560" height="1330" />
+    </state>
+    <state x="462" y="479" key="git4idea.remote.GitConfigureRemotesDialog/0.25.2560.1330@0.25.2560.1330" timestamp="1605365924511" />
+    <state x="283" y="599" key="git4idea.ui.GitStashDialog" timestamp="1605364067489">
+      <screen x="0" y="25" width="2560" height="1330" />
+    </state>
+    <state x="283" y="599" key="git4idea.ui.GitStashDialog/0.25.2560.1330@0.25.2560.1330" timestamp="1605364067489" />
+  </component>
+</project>

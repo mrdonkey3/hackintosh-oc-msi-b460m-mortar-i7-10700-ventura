@@ -1,0 +1,10 @@
+<div id="helpTitleBar"><label class="dropDownTitleText">Information: I/O Kit Registry</label></div>
+<p class="dropDownBody">This option performs two steps.</p>
+<p class="dropDownBody">First, for a complete full IORegistry dump, the ioregwv tool is run five times, once for each IORegistry plane. A shell script is then run to process the output and build an IORegViewer folder in the latest dump/IORegistry folder.</p>
+<table width="425" border="0">
+    <tr>
+        <th width="50" class="dropDownTableBodyBold">Source</td>
+        <td width="325" class="dropDownTableBody"><a href="https://bitbucket.org/blackosx/ioregwv/src/master/P" target="_blank">ioregwv from blackosx repository</a></td>
+    </tr>
+</table>
+<p class="dropDownBody">Second, the /usr/sbin/ioreg tool is run to dump the IOService plane to a file named IOReg.txt and the IODeviceTree plane to a file named IORegDT.txt. Each file is then saved in the latest dump/IORegistry folder.</p>

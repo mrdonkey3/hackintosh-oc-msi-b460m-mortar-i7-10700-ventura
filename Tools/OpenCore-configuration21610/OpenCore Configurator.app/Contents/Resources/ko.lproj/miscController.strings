@@ -1,0 +1,402 @@
+
+/* Class = "NSButtonCell"; title = "DEBUG_INFO in DEBUG, NOOPT"; ObjectID = "0hR-wG-mgt"; */
+"0hR-wG-mgt.title" = "DEBUG_INFO in DEBUG, NOOPT";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable VirtualSMC-compatible authenticated restart.\nAuthenticated restart is a way to reboot FileVault 2 enabled macOS without entering the password. To perform authenticated restart one can use a dedicated terminal command: sudo fdesetup authrestart. It is also used when installing operating system updates.\nVirtualSMC performs authenticated restart by saving disk encryption key split in NVRAM and RTC, which despite being removed as soon as OpenCore starts, may be considered a security risk and thus is optional."; ObjectID = "0sy-D3-AKk"; */
+"0sy-D3-AKk.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable VirtualSMC-compatible authenticated restart.\nAuthenticated restart is a way to reboot FileVault 2 enabled macOS without entering the password. To perform authenticated restart one can use a dedicated terminal command: sudo fdesetup authrestart. It is also used when installing operating system updates.\nVirtualSMC performs authenticated restart by saving disk encryption key split in NVRAM and RTC, which despite being removed as soon as OpenCore starts, may be considered a security risk and thus is optional.";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nFailsafe: 0\nDescription: Apple Enclave Identifier.\nSetting this value to any non-zero 64-bit integer will allow using personalised Apple Secure Boot identifiers. If you want to use this setting, make sure to generate a random 64-bit number with a cryptographically secure random number generator. With this value set and SecureBootModel valid and not Disabled it is possible to achieve Full Security of Apple Secure Boot.\n\nTo start using personalised Apple Secure Boot you will have to reinstall the operating system or personalise it.\nUntil your operating system is personalised you will only be able to load macOS DMG recovery. If you do not have DMG recovery you could always download it with macrecovery utility and put to com.apple.recovery.boot as explained in Tips and Tricks section. Keep in mind that DMG loading needs to be set to Signed to use any DMG with Apple Secure Boot.\n\nTo personalise an existing operating system use bless command after loading to macOS DMG recovery. Mount the system volume partition, unless it has already been mounted, and execute the following command:\n\nbless bless --folder \"/Volumes/Macintosh HD/System/Library/CoreServices\" \\ --bootefi --personalize\n\nWhen reinstalling the operating system, keep in mind that current versions of macOS Installer, tested as of 10.15.6, will usually run out of free memory on the /var/tmp partition when trying to install macOS with the personalised Apple Secure Boot. Soon after downloading the macOS installer image an Unable to verify macOS error message will appear. To workaround this issue allocate a dedicated RAM disk of 2 MBs for macOS personalisation by entering the following commands in macOS recovery terminal before starting the installation:\n\ndisk=$(hdiutil attach -nomount ram://4096)\ndiskutil erasevolume HFS+ SecureBoot $disk\ndiskutil unmount $disk\nmkdir /var/tmp/OSPersonalizationTemp\ndiskutil mount -mountpoint /var/tmp/OSPersonalizationTemp $disk"; ObjectID = "0yA-ct-dgi"; */
+"0yA-ct-dgi.ibShadowedToolTip" = "Type: plist integer, 64 bit\nFailsafe: 0\nDescription: Apple Enclave Identifier.\nSetting this value to any non-zero 64-bit integer will allow using personalised Apple Secure Boot identifiers. If you want to use this setting, make sure to generate a random 64-bit number with a cryptographically secure random number generator. With this value set and SecureBootModel valid and not Disabled it is possible to achieve Full Security of Apple Secure Boot.\n\nNote 1: You will have to reinstall the operating system or use macOS DMG recovery to bless –personalize your installation after setting this value to non-zero. Installing the operating system with ApECID value set to non-zero is only possible through macOS recovery or personalized builds created with asr.\n\nNote 2: Currently the use of this option is unrealiable (apparently to a bug in macOS installer), and thus its use is not recommended.";
+
+/* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "1NZ-HO-WUF"; */
+"1NZ-HO-WUF.headerCell.title" = "Comment";
+
+/* Class = "NSTableColumn"; headerCell.title = "Auxiliary"; ObjectID = "1fY-U6-4KQ"; */
+"1fY-U6-4KQ.headerCell.title" = "Auxiliary";
+
+/* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "22Z-wl-E30"; */
+"22Z-wl-E30.headerCell.title" = "Name";
+
+/* Class = "NSButtonCell"; title = "Enable logging to Data Hub"; ObjectID = "2Qh-mc-sJw"; */
+"2Qh-mc-sJw.title" = "Enable logging to Data Hub";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: A bitmask (sum) of enabled logging targets. By default all the logging output is hidden, so this option is required to be set when debugging is necessary.\nThe following logging targets are supported:\n• 0x01 — Enable logging, otherwise all log is discarded.\n• 0x02 — Enable basic console (onscreen) logging.\n• 0x04 — Enable logging to Data Hub.\n• 0x08 — Enable serial port logging.\n• 0x10 — Enable UEFI variable logging.\n• 0x20 — Enable non-volatile UEFI variable logging.\n• 0x40 — Enable logging to file.\nConsole logging prints less than all the other variants. Depending on the build type (RELEASE, DEBUG, or NOOPT) different amount of logging may be read (from least to most)."; ObjectID = "2Vb-s2-Ejp"; */
+"2Vb-s2-Ejp.ibShadowedToolTip" = "Type: plist integer\nDefault value: 0\nDescription: A bitmask (sum) of enabled logging targets. By default all the logging output is hidden, so this option is required to be set when debugging is necessary.\nThe following logging targets are supported:\n• 0x01 — Enable logging, otherwise all log is discarded.\n• 0x02 — Enable basic console (onscreen) logging.\n• 0x04 — Enable logging to Data Hub.\n• 0x08 — Enable serial port logging.\n• 0x10 — Enable UEFI variable logging.\n• 0x20 — Enable non-volatile UEFI variable logging.\n• 0x40 — Enable logging to file.\nConsole logging prints less than all the other variants. Depending on the build type (RELEASE, DEBUG, or NOOPT) different amount of logging may be read (from least to most).";
+
+/* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "2dj-hB-QBF"; */
+"2dj-hB-QBF.title" = "모두 선택 취소";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Save macOS kernel panic to OpenCore root partition.\nThe file is saved as panic-YYYY-MM-DD-HHMMSS.txt. It is strongly recommended to have keepsyms=1 boot argument to see debug symbols in the panic log. In case it was not present kpdescribe.sh utility (bundled with OpenCore) may be used to partially recover the stacktrace.\nDevelopment and debug kernels produce more helpful kernel panics. Consider downloading and installing\nKernelDebugKit from developer.apple.com when debugging a problem. To activate a development kernel you will need to add a kcsuffix=development boot argument. Use uname -a command to ensure that your current loaded kernel is a development (or a debug) kernel.\nIn case OpenCore kernel panic saving mechanism was not used, kernel panics may still be found in /Library/Logs/Diagnostic directory. Starting with macOS Catalina kernel panics are stored in JSON format, so they need to be preprocessedbefore passing to kpdescribe.sh: \ncat Kernel.panic | grep macOSProcessedStackshotData | python -c 'import json,sys;print(json.load(sys.stdin)[\"macOSPanicString\"])'"; ObjectID = "2lk-2r-hIW"; */
+"2lk-2r-hIW.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Save macOS kernel panic to OpenCore root partition.\nThe file is saved as panic-YYYY-MM-DD-HHMMSS.txt. It is strongly recommended to have keepsyms=1 boot argument to see debug symbols in the panic log. In case it was not present kpdescribe.sh utility (bundled with OpenCore) may be used to partially recover the stacktrace.\nDevelopment and debug kernels produce more helpful kernel panics. Consider downloading and installing\nKernelDebugKit from developer.apple.com when debugging a problem. To activate a development kernel you will need to add a kcsuffix=development boot argument. Use uname -a command to ensure that your current loaded kernel is a development (or a debug) kernel.\nIn case OpenCore kernel panic saving mechanism was not used, kernel panics may still be found in /Library/Logs/Diagnostic directory. Starting with macOS Catalina kernel panics are stored in JSON format, so they need to be preprocessedbefore passing to kpdescribe.sh: \ncat Kernel.panic | grep macOSProcessedStackshotData | python -c 'import json,sys;print(json.load(sys.stdin)[\"macOSPanicString\"])'";
+
+/* Class = "NSButtonCell"; title = "Select All"; ObjectID = "3K9-EU-jse"; */
+"3K9-EU-jse.title" = "모두 선택";
+
+/* Class = "NSTabViewItem"; label = "Boot"; ObjectID = "3fm-9G-OpP"; */
+"3fm-9G-OpP.label" = "부트";
+
+/* Class = "NSTabViewItem"; label = "Security"; ObjectID = "3fm-Nz-fHj"; */
+"3fm-Nz-fHj.label" = "보안";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Builtin\nDescription: Choose boot picker used for boot management.\nPicker describes underlying boot management with an optional user interface responsible for handling boot\noptions. The following values are supported:\n• Builtin — boot management is handled by OpenCore, a simple text only user interface is used.\n• External — an external boot management protocol is used if available. Otherwise Builtin mode is used.\n• Apple — Apple boot management is used if available. Otherwise Builtin mode is used.\n\nUpon success External mode will entirely disable all boot management in OpenCore except policy enforcement. See OpenCanopy plugin for an example of a custom user interface.\nOpenCore built-in boot picker contains a set of actions chosen during the boot process. The list of supported actions is similar to Apple BDS and in general can be accessed by holding action hotkeys during boot process. Currently the following actions are considered:\n• Default — this is the default option, and it lets OpenCore built-in boot picker to loads the default boot option as specified in Startup Disk preference pane.\n• ShowPicker — this option forces picker to show. Normally it can be achieved by holding OPT key during boot. Setting ShowPicker to true will make ShowPicker the default option.\n• ResetNvram — this option performs select UEFI variable erase and is normally achieved by holding CMD+OPT+P+R key combination during boot. Another way to erase UEFI variables is to choose Reset NVRAM in the picker. This option requires AllowNvramReset to be set to true.\n• BootApple — this options performs booting to the first found Apple operating system unless the default chosen operating system is already made by Apple. Hold X key to choose this option.\n• BootAppleRecovery — this option performs booting to Apple operating system recovery. Either the one related to the default chosen operating system, or first found in case default chosen operating system is not made by Apple or has no recovery. Hold CMD+R key combination to choose this option.\nNote 1: Activated KeySupport, OpenUsbKbDxe, or similar driver is required for key handling to work. On many firmwares it is not possible to get all the keys function.\nNote 2: In addition to OPT OpenCore supports Escape key to display picker when ShowPicker is disabled. This key exists for Apple picker mode and for firmwares with PS/2 keyboards that fail to report held OPT key and require continual presses of Escape key to enter the boot menu.\nNote 3: On Macs with problematic GOP it may be difficult to access Apple BootPicker. BootKicker utility can be blessed to workaround this problem even without loading OpenCore. On some Macs BootKicker will not run from OpenCore."; ObjectID = "5Or-M0-hZS"; */
+"5Or-M0-hZS.ibShadowedToolTip" = "Type: plist string\nFailsafe: Builtin\nDescription: Choose boot picker used for boot management.\nPicker describes underlying boot management with an optional user interface responsible for handling boot\noptions. The following values are supported:\n• Builtin — boot management is handled by OpenCore, a simple text only user interface is used.\n• External — an external boot management protocol is used if available. Otherwise Builtin mode is used.\n• Apple — Apple boot management is used if available. Otherwise Builtin mode is used.\n\nUpon success External mode will entirely disable all boot management in OpenCore except policy enforcement. See OpenCanopy plugin for an example of a custom user interface.\nOpenCore built-in boot picker contains a set of actions chosen during the boot process. The list of supported actions is similar to Apple BDS and in general can be accessed by holding action hotkeys during boot process. Currently the following actions are considered:\n• Default — this is the default option, and it lets OpenCore built-in boot picker to loads the default boot option as specified in Startup Disk preference pane.\n• ShowPicker — this option forces picker to show. Normally it can be achieved by holding OPT key during boot. Setting ShowPicker to true will make ShowPicker the default option.\n• ResetNvram — this option performs select UEFI variable erase and is normally achieved by holding CMD+OPT+P+R key combination during boot. Another way to erase UEFI variables is to choose Reset NVRAM in the picker. This option requires AllowNvramReset to be set to true.\n• BootApple — this options performs booting to the first found Apple operating system unless the default chosen operating system is already made by Apple. Hold X key to choose this option.\n• BootAppleRecovery — this option performs booting to Apple operating system recovery. Either the one related to the default chosen operating system, or first found in case default chosen operating system is not made by Apple or has no recovery. Hold CMD+R key combination to choose this option.\nNote 1: Activated KeySupport, OpenUsbKbDxe, or similar driver is required for key handling to work. On many firmwares it is not possible to get all the keys function.\nNote 2: In addition to OPT OpenCore supports Escape key to display picker when ShowPicker is disabled. This key exists for Apple picker mode and for firmwares with PS/2 keyboards that fail to report held OPT key and require continual presses of Escape key to enter the boot menu.\nNote 3: On Macs with problematic GOP it may be difficult to access Apple BootPicker. To workaround this problem even without loading OpenCore BootKicker utility can be blessed.";
+
+/* Class = "NSButtonCell"; title = "Enable UEFI variable logging"; ObjectID = "6U3-np-fQe"; */
+"6U3-np-fQe.title" = "Enable UEFI variable logging";
+
+/* Class = "NSTextFieldCell"; title = "Timeout"; ObjectID = "6hf-UH-eBA"; */
+"6hf-UH-eBA.title" = "Timeout";
+
+/* Class = "NSButtonCell"; title = "HideAuxiliary"; ObjectID = "7BP-eo-vIZ"; */
+"7BP-eo-vIZ.title" = "HideAuxiliary";
+
+/* Class = "NSButtonCell"; title = "Expose OpenCore version in boot picker menu title."; ObjectID = "7NC-lm-XEM"; */
+"7NC-lm-XEM.title" = "Expose OpenCore version in boot picker menu title.";
+
+/* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n3. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable entry name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: Entry location depending on entry type.\n• Entries specify external boot options, and therefore take device paths in Path key. These values are not checked, thus be extremely careful. Example: PciRoot(0x0)/Pci(0x1,0x1)/.../\\EFI\\COOL.EFI\n• Tools specify internal boot options, which are part of bootloader vault, and therefore take file paths relative to OC/Tools directory. Example: OpenShell.efi."; ObjectID = "8Gl-6A-OsL"; */
+"8Gl-6A-OsL.ibShadowedToolTip" = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n3. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable entry name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: Entry location depending on entry type.\n• Entries specify external boot options, and therefore take device paths in Path key. These values are not checked, thus be extremely careful. Example: PciRoot(0x0)/Pci(0x1,0x1)/.../\\EFI\\COOL.EFI\n• Tools specify internal boot options, which are part of bootloader vault, and therefore take file paths relative to OC/Tools directory. Example: OpenShell.efi.";
+
+/* Class = "NSTextFieldCell"; title = "PasswordSalt"; ObjectID = "8Xp-t8-QVB"; */
+"8Xp-t8-QVB.title" = "PasswordSalt";
+
+/* Class = "NSButtonCell"; title = "Disable WatchDog"; ObjectID = "9LG-wP-7Np"; */
+"9LG-wP-7Np.title" = "Disable WatchDog";
+
+/* Class = "NSTextFieldCell"; title = "ApECID"; ObjectID = "A2A-xj-Bmf"; */
+"A2A-xj-Bmf.title" = "ApECID";
+
+/* Class = "NSButtonCell"; title = "DEBUG_WARN in DEBUG, NOOPT, RELEASE"; ObjectID = "AEq-Xa-8FR"; */
+"AEq-Xa-8FR.title" = "DEBUG_WARN in DEBUG, NOOPT, RELEASE";
+
+/* Class = "NSButtonCell"; title = "Select All"; ObjectID = "Ai7-te-FXf"; */
+"Ai7-te-FXf.title" = "모두 선택";
+
+/* Class = "NSTextFieldCell"; title = "Picker Mode"; ObjectID = "BYc-kG-loi"; */
+"BYc-kG-loi.title" = "Picker Mode";
+
+/* Class = "NSButtonCell"; title = "Expose OpenCore version as an UEFI variable."; ObjectID = "Bcn-4Z-d2d"; */
+"Bcn-4Z-d2d.title" = "Expose OpenCore version as an UEFI variable.";
+
+/* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Bpe-6y-ybA"; */
+"Bpe-6y-ybA.title" = "찾아보기";
+
+/* Class = "NSTextFieldCell"; title = "Expose Sensitive Data"; ObjectID = "DAS-KM-gwG"; */
+"DAS-KM-gwG.title" = "Expose Sensitive Data";
+
+/* Class = "NSButtonCell"; title = "Enable non-volatile UEFI variable logging"; ObjectID = "Da8-bR-9wd"; */
+"Da8-bR-9wd.title" = "Enable non-volatile UEFI variable logging";
+
+/* Class = "NSTableView"; ibShadowedToolTip = "Type: plist array\nDescription: Add custom scanning paths through bless model.\nDesigned to be filled with plist string entries containing absolute UEFI paths to customised bootloaders, for example, \\EFI\\Microsoft\\bootmgfw.efi for Microsoft bootloader. This allows unusual boot paths to be automaticlly discovered by the boot picker. Designwise they are equivalent to predefined blessed path, such as \\System\\Library\\CoreServices\\boot.efi, but unlike predefined bless paths they have highest priority."; ObjectID = "E7L-MW-EuK"; */
+"E7L-MW-EuK.ibShadowedToolTip" = "Type: plist array\nDescription: Add custom scanning paths through bless model.\nDesigned to be filled with plist string entries containing absolute UEFI paths to customised bootloaders, for example, \\EFI\\Microsoft\\bootmgfw.efi for Microsoft bootloader. This allows unusual boot paths to be automaticlly discovered by the boot picker. Designwise they are equivalent to predefined blessed path, such as \\System\\Library\\CoreServices\\boot.efi, but unlike predefined bless paths they have highest priority.";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_ESP"; ObjectID = "Edm-Vw-KuX"; */
+"Edm-Vw-KuX.title" = "OC_SCAN_ALLOW_FS_ESP";
+
+/* Class = "NSTextFieldCell"; title = "Display Delay"; ObjectID = "FHv-7q-Wq3"; */
+"FHv-7q-Wq3.title" = "Display Delay";
+
+/* Class = "NSButtonCell"; title = "SysReport"; ObjectID = "GOG-QD-oyI"; */
+"GOG-QD-oyI.title" = "SysReport";
+
+/* Class = "NSButtonCell"; title = "Select All"; ObjectID = "Gaf-gn-k6J"; */
+"Gaf-gn-k6J.title" = "모두선택";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_EXT"; ObjectID = "H6a-QA-xQu"; */
+"H6a-QA-xQu.title" = "OC_SCAN_ALLOW_FS_EXT";
+
+/* Class = "NSButtonCell"; title = "Enable serial port logging"; ObjectID = "HjZ-gH-Q0b"; */
+"HjZ-gH-Q0b.title" = "Enable serial port logging";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_PCI"; ObjectID = "I0K-dq-ofU"; */
+"I0K-dq-ofU.title" = "OC_SCAN_ALLOW_DEVICE_PCI";
+
+/* Class = "NSButtonCell"; title = "AllowNvramReset"; ObjectID = "Jpe-QB-x2r"; */
+"Jpe-QB-x2r.title" = "AllowNvramReset";
+
+/* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "KRE-fs-cVq"; */
+"KRE-fs-cVq.title" = "모두 선택취소";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Signed\nDescription: Define Disk Image (DMG) loading policy used for macOS Recovery.\n\nValid values:\n• Disabled — loading DMG images will fail. Disabled policy will still let macOS Recovery to load in most cases as there usually are boot.efi files compatible with Apple Secure Boot. Manually images stored in com.apple.recovery.boot directories will not load, however.\n• Signed — only Apple-signed DMG images will load. Due to Apple Secure Boot design Signed policy will let any Apple-signed macOS Recovery to load regardless of Apple Secure Boot state, which may not always be desired.\n• Any — any DMG images will mount as normal filesystems. Any policy is strongly not recommended and will cause a boot failure when Apple Secure Boot is activated."; ObjectID = "KUQ-Na-LT4"; */
+"KUQ-Na-LT4.ibShadowedToolTip" = "Type: plist string\nFailsafe: Signed\nDescription: Define Disk Image (DMG) loading policy used for macOS Recovery.\n\nValid values:\n• Disabled — loading DMG images will fail. Disabled policy will still let macOS Recovery to load in most cases as there usually are boot.efi files compatible with Apple Secure Boot. Manually images stored in com.apple.recovery.boot directories will not load, however.\n• Signed — only Apple-signed DMG images will load. Due to Apple Secure Boot design Signed policy will let any Apple-signed macOS Recovery to load regardless of Apple Secure Boot state, which may not always be desired.\n• Any — any DMG images will mount as normal filesystems. Any policy is strongly not recommended and will cause a boot failure when Apple Secure Boot is activated.";
+
+/* Class = "NSButtonCell"; title = "Provides custom rendered titles for boot entries"; ObjectID = "L3h-6q-xRi"; */
+"L3h-6q-xRi.title" = "Provides custom rendered titles for boot entries";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Select firmwares may not succeed in quickly booting the operating system, especially in debug mode, which results in watch dog timer aborting the process. This option turns off watch dog timer."; ObjectID = "LCd-qL-7KC"; */
+"LCd-qL-7KC.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Select firmwares may not succeed in quickly booting the operating system, especially in debug mode, which results in watch dog timer aborting the process. This option turns off watch dog timer.";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data 64 bytes\nFailsafe: all zero\nDescription: Password hash used when EnabledPassword is set."; ObjectID = "NCW-lH-X8S"; */
+"NCW-lH-X8S.ibShadowedToolTip" = "Type: plist data 64 bytes\nFailsafe: all zero\nDescription: Password hash used when EnabledPassword is set.";
+
+/* Class = "NSButtonCell"; title = "Changes used icon set to an alternate one if it is supported"; ObjectID = "NFd-Yp-DAy"; */
+"NFd-Yp-DAy.title" = "Changes used icon set to an alternate one if it is supported";
+
+/* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "NXw-uw-Jsu"; */
+"NXw-uw-Jsu.headerCell.title" = "활성화";
+
+/* Class = "NSTextFieldCell"; title = "BootProtect"; ObjectID = "OeD-Mz-a2a"; */
+"OeD-Mz-a2a.title" = "BootProtect";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable screen reader by default in boot picker.\nFor macOS bootloader screen reader preference is set in preferences.efires archive in isVOEnabled.int32 file and is controlled by the operating system. For OpenCore screen reader support this option is an independent equivalent. Toggling screen reader support in both OpenCore boot picker and macOS bootloader FileVault 2 login window can also be done with Command + F5 key combination.\nNote: screen reader requires working audio support, see UEFI Audio Properties section for more details."; ObjectID = "PDS-bo-Qx8"; */
+"PDS-bo-Qx8.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable screen reader by default in boot picker.\nFor macOS bootloader screen reader preference is set in preferences.efires archive in isVOEnabled.int32 file and is controlled by the operating system. For OpenCore screen reader support this option is an independent equivalent. Toggling screen reader support in both OpenCore boot picker and macOS bootloader FileVault 2 login window can also be done with Command + F5 key combination.\nNote: screen reader requires working audio support, see UEFI Audio Properties section for more details.";
+
+/* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "PDr-JO-EKf"; */
+"PDr-JO-EKf.title" = "모두 선택취소";
+
+/* Class = "NSTextFieldCell"; title = "ConsoleAttributes"; ObjectID = "PIX-Ia-ajs"; */
+"PIX-Ia-ajs.title" = "ConsoleAttributes";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable password protection to allow sensitive operations.\n\nPassword protection ensures that sensitive operations like booting a non-default operating system (e.g. macOS recovery or a tool), resetting NVRAM storage, trying to boot into a non-default mode (e.g. verbose mode or safe mode) are not allowed without explicit user authentication by a custom password. Currently password and salt are hashed with 5000000 iterations of SHA-512.\n\nNote: This functionality is currently in development and is not ready for daily usage."; ObjectID = "PbU-if-N7O"; */
+"PbU-if-N7O.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable password protection to allow sensitive operations.\n\nPassword protection ensures that sensitive operations like booting a non-default operating system (e.g. macOS recovery or a tool), resetting NVRAM storage, trying to boot into a non-default mode (e.g. verbose mode or safe mode) are not allowed without explicit user authentication by a custom password. Currently password and salt are hashed with 5000000 iterations of SHA-512.\n\nNote: This functionality is currently in development and is not ready for daily usage.";
+
+/* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Pkl-Zl-stw"; */
+"Pkl-Zl-stw.title" = "찾아보기";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: Delay in microseconds performed after every printed line visible onscreen (i.e. console)."; ObjectID = "PwU-cB-LIO"; */
+"PwU-cB-LIO.ibShadowedToolTip" = "Type: plist integer\nDefault value: 0\nDescription: Delay in microseconds performed after every printed line visible onscreen (i.e. console).";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "TakeoffDelay \nType: plist integer, 32 bit \nFailsafe: 0\nDescription: Delay in microseconds performed before handling picker startup and action hotkeys. \nIntroducing a delay may give extra time to hold the right action hotkey sequence to e.g. boot to recovery mode. On some platforms setting this option to at least 5000-10000 microseconds may be necessary to access action hotkeys at all due to the nature of the keyboard driver."; ObjectID = "QGG-If-K71"; */
+"QGG-If-K71.ibShadowedToolTip" = "TakeoffDelay \nType: plist integer, 32 bit \nFailsafe: 0\nDescription: Delay in microseconds performed before handling picker startup and action hotkeys. \nIntroducing a delay may give extra time to hold the right action hotkey sequence to e.g. boot to recovery mode. On some platforms setting this option to at least 5000-10000 microseconds may be necessary to access action hotkeys at all due to the nature of the keyboard driver.";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Secure\nDescription: Enables vaulting mechanism in OpenCore.\nValid values:\n• Optional — require nothing, no vault is enforced, insecure.\n• Basic — require vault.plist file present in OC directory. This provides basic filesystem integrity verification and may protect from unintentional filesystem corruption.\n• Secure — require vault.sig signature file for vault.plist in OC directory. This includes Basic integrity checking but also attempts to build a trusted bootchain.\nvault.plist file should contain SHA-256 hashes for all files used by OpenCore. Presence of this file is highly recommended to ensure that unintentional file modifications (including filesystem corruption) do not happen unnoticed. To create this file automatically use create_vault.sh script. Regardless of the underlying filesystem, path name and case must match between config.plist and vault.plist.\nvault.sig file should contain a raw 256 byte RSA-2048 signature from SHA-256 hash of vault.plist. The signature is verified against the public key embedded into OpenCore.efi. To embed the public key you should do either of the following:\n• Provide public key during the OpenCore.efi compilation in OpenCoreVault.c file.\n• Binary patch OpenCore.efi replacing zeroes with the public key between =BEGIN OC VAULT= and ==END OC VAULT== ASCII markers.\nRSA public key 520 byte format description can be found in Chromium OS documentation. To convert public key from X.509 certificate or from PEM file use RsaTool.\n\nThe complete set of commands to:\n• Create vault.plist.\n• Create a new RSA key (always do this to avoid loading old configuration).\n• Embed RSA key into OpenCore.efi.\n• Create vault.sig.\n\nCan look as follows:\ncd /Volumes/EFI/EFI/OC/path/to/create_vault.sh .\n/path/to/RsaTool -sign vault.plist vault.sig vault.pub\noff=$(($(strings -a -t d OpenCore.efi | grep \"=BEGIN OC VAULT=\" | cut -f1 -d' ')+16))\ndd of=OpenCore.efi if=vault.pub bs=1 seek=$off count=528 conv=notrunc\nrm vault.pub\n\nNote 1: While it may appear obvious, but you have to use an external method to verify OpenCore.efi and BOOTx64.efi for secure boot path. For this you are recommended to at least enable UEFI SecureBoot with a custom certificate, and sign OpenCore.efi and BOOTx64.efi with your custom key. More details on customising secure boot on modern firmwares can be found in Taming UEFI SecureBoot paper (in Russian).\nNote 2: vault.plist and vault.sig are used regardless of this option when vault.plist is present or public key is embedded into OpenCore.efi. Setting this option will only ensure configuration sanity, and abort the boot process otherwise."; ObjectID = "QZk-2b-TCx"; */
+"QZk-2b-TCx.ibShadowedToolTip" = "Type: plist string\nFailsafe: Secure\nDescription: Enables vaulting mechanism in OpenCore.\nValid values:\n• Optional — require nothing, no vault is enforced, insecure.\n• Basic — require vault.plist file present in OC directory. This provides basic filesystem integrity verification and may protect from unintentional filesystem corruption.\n• Secure — require vault.sig signature file for vault.plist in OC directory. This includes Basic integrity checking but also attempts to build a trusted bootchain.\nvault.plist file should contain SHA-256 hashes for all files used by OpenCore. Presence of this file is highly recommended to ensure that unintentional file modifications (including filesystem corruption) do not happen unnoticed. To create this file automatically use create_vault.sh script. Regardless of the underlying filesystem, path name and case must match between config.plist and vault.plist.\nvault.sig file should contain a raw 256 byte RSA-2048 signature from SHA-256 hash of vault.plist. The signature is verified against the public key embedded into OpenCore.efi. To embed the public key you should do either of the following:\n• Provide public key during the OpenCore.efi compilation in OpenCoreVault.c file.\n• Binary patch OpenCore.efi replacing zeroes with the public key between =BEGIN OC VAULT= and ==END OC VAULT== ASCII markers.\nRSA public key 520 byte format description can be found in Chromium OS documentation. To convert public key from X.509 certificate or from PEM file use RsaTool.\n\nThe complete set of commands to:\n• Create vault.plist.\n• Create a new RSA key (always do this to avoid loading old configuration).\n• Embed RSA key into OpenCore.efi.\n• Create vault.sig.\n\nCan look as follows:\ncd /Volumes/EFI/EFI/OC/path/to/create_vault.sh .\n/path/to/RsaTool -sign vault.plist vault.sig vault.pub\noff=$(($(strings -a -t d OpenCore.efi | grep \"=BEGIN OC VAULT=\" | cut -f1 -d' ')+16))\ndd of=OpenCore.efi if=vault.pub bs=1 seek=$off count=528 conv=notrunc\nrm vault.pub\n\nNote 1: While it may appear obvious, but you have to use an external method to verify OpenCore.efi and BOOTx64.efi for secure boot path. For this you are recommended to at least enable UEFI SecureBoot with a custom certificate, and sign OpenCore.efi and BOOTx64.efi with your custom key. More details on customising secure boot on modern firmwares can be found in Taming UEFI SecureBoot paper (in Russian).\nNote 2: vault.plist and vault.sig are used regardless of this option when vault.plist is present or public key is embedded into OpenCore.efi. Setting this option will only ensure configuration sanity, and abort the boot process otherwise.";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nDefault value: 0x80000000 (DEBUG_ERROR)\nDescription: EDK II debug level bitmask (sum) causing CPU to halt (stop execution) after obtaining a message of HaltLevel. Possible values match DisplayLevel values."; ObjectID = "QbL-ID-H0a"; */
+"QbL-ID-H0a.ibShadowedToolTip" = "Type: plist integer, 64 bit\nDefault value: 0x80000000 (DEBUG_ERROR)\nDescription: EDK II debug level bitmask (sum) causing CPU to halt (stop execution) after obtaining a message of HaltLevel. Possible values match DisplayLevel values.";
+
+/* Class = "NSButtonCell"; title = "Expose OEM information as a set of UEFI variables."; ObjectID = "SLo-CJ-cas"; */
+"SLo-CJ-cas.title" = "Expose OEM information as a set of UEFI variables.";
+
+/* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "SPw-C4-qwL"; */
+"SPw-C4-qwL.headerCell.title" = "활성화";
+
+/* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "SZj-0R-9Uu"; */
+"SZj-0R-9Uu.title" = "모두 선택취소";
+
+/* Class = "NSButtonCell"; title = "PollAppleHotKeys"; ObjectID = "TDv-Al-hb0"; */
+"TDv-Al-hb0.title" = "PollAppleHotKeys";
+
+/* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "ThF-JP-r8K"; */
+"ThF-JP-r8K.headerCell.title" = "Arguments";
+
+/* Class = "NSTextFieldCell"; title = "Hibernate Mode"; ObjectID = "TmR-t7-bmq"; */
+"TmR-t7-bmq.title" = "Hibernate Mode";
+
+/* Class = "NSButtonCell"; title = "Enable logging to file"; ObjectID = "Uz7-yL-WDQ"; */
+"Uz7-yL-WDQ.title" = "Enable logging to file";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 32 bit\nDefault value: 0x10F0103\nDescription: Define operating system detection policy.\nThis value allows to prevent scanning (and booting) from untrusted source based on a bitmask (sum) of select flags. As it is not possible to reliably detect every file system or device type, this feature cannot be fully relied upon in open environments, and the additional measures are to be applied.\nThird party drivers may introduce additional security (and performance) measures following the provided scan policy. Scan policy is exposed in scan-policy variable of 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102 GUID for UEFI Boot Services only.\n• 0x00000001 — OC_SCAN_FILE_SYSTEM_LOCK, restricts scanning to only known file systems defined as a part of this policy. File system drivers may not be aware of this policy, and to avoid mounting of undesired file systems it is best not to load its driver. This bit does not affect dmg mounting, which may have any file system. Known file systems are prefixed with OC_SCAN_ALLOW_FS_.\n• 0x00000002 — OC_SCAN_DEVICE_LOCK, restricts scanning to only known device types defined as a part of this policy. This is not always possible to detect protocol tunneling, so be aware that on some systems it may be possible for e.g. USB HDDs to be recognised as SATA. Cases like this must be reported. Known device types are prefixed with OC_SCAN_ALLOW_DEVICE_.\n• 0x00000100 — OC_SCAN_ALLOW_FS_APFS, allows scanning of APFS file system.\n• 0x00010000 — OC_SCAN_ALLOW_DEVICE_SATA, allow scanning SATA devices.\n• 0x00020000 — OC_SCAN_ALLOW_DEVICE_SASEX, allow scanning SAS and Mac NVMe devices.\n• 0x00040000 — OC_SCAN_ALLOW_DEVICE_SCSI, allow scanning SCSI devices.\n• 0x00080000 — OC_SCAN_ALLOW_DEVICE_NVME, allow scanning NVMe devices.\n• 0x00100000 — OC_SCAN_ALLOW_DEVICE_ATAPI, allow scanning CD/DVD devices.\n• 0x00200000 — OC_SCAN_ALLOW_DEVICE_USB, allow scanning USB devices.\n• 0x00400000 — OC_SCAN_ALLOW_DEVICE_FIREWIRE, allow scanning FireWire devices.\n• 0x00800000 — OC_SCAN_ALLOW_DEVICE_SDCARD, allow scanning card reader devices.\n• 0x01000000 (bit 24) — OC_SCAN_ALLOW_DEVICE_PCI, allow scanning devices directly connected to PCI bus (e.g. VIRTIO).\n\nNote: Given the above description, 0xF0103 value is expected to allow scanning of SATA, SAS, SCSI, and NVMe devices with APFS file system, and prevent scanning of any devices with HFS or FAT32 file systems in addition to not scanning APFS file systems on USB, CD, USB, and FireWire drives. The combination reads as:\n• OC_SCAN_FILE_SYSTEM_LOCK • OC_SCAN_DEVICE_LOCK\n• OC_SCAN_ALLOW_FS_APFS\n• OC_SCAN_ALLOW_DEVICE_SATA\n• OC_SCAN_ALLOW_DEVICE_SASEX\n• OC_SCAN_ALLOW_DEVICE_SCSI • OC_SCAN_ALLOW_DEVICE_NVME"; ObjectID = "VQF-Ne-GWu"; */
+"VQF-Ne-GWu.ibShadowedToolTip" = "Type: plist integer, 32 bit\nDefault value: 0x10F0103\nDescription: Define operating system detection policy.\nThis value allows to prevent scanning (and booting) from untrusted source based on a bitmask (sum) of select flags. As it is not possible to reliably detect every file system or device type, this feature cannot be fully relied upon in open environments, and the additional measures are to be applied.\nThird party drivers may introduce additional security (and performance) measures following the provided scan policy. Scan policy is exposed in scan-policy variable of 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102 GUID for UEFI Boot Services only.\n• 0x00000001 — OC_SCAN_FILE_SYSTEM_LOCK, restricts scanning to only known file systems defined as a part of this policy. File system drivers may not be aware of this policy, and to avoid mounting of undesired file systems it is best not to load its driver. This bit does not affect dmg mounting, which may have any file system. Known file systems are prefixed with OC_SCAN_ALLOW_FS_.\n• 0x00000002 — OC_SCAN_DEVICE_LOCK, restricts scanning to only known device types defined as a part of this policy. This is not always possible to detect protocol tunneling, so be aware that on some systems it may be possible for e.g. USB HDDs to be recognised as SATA. Cases like this must be reported. Known device types are prefixed with OC_SCAN_ALLOW_DEVICE_.\n• 0x00000100 — OC_SCAN_ALLOW_FS_APFS, allows scanning of APFS file system.\n• 0x00010000 — OC_SCAN_ALLOW_DEVICE_SATA, allow scanning SATA devices.\n• 0x00020000 — OC_SCAN_ALLOW_DEVICE_SASEX, allow scanning SAS and Mac NVMe devices.\n• 0x00040000 — OC_SCAN_ALLOW_DEVICE_SCSI, allow scanning SCSI devices.\n• 0x00080000 — OC_SCAN_ALLOW_DEVICE_NVME, allow scanning NVMe devices.\n• 0x00100000 — OC_SCAN_ALLOW_DEVICE_ATAPI, allow scanning CD/DVD devices.\n• 0x00200000 — OC_SCAN_ALLOW_DEVICE_USB, allow scanning USB devices.\n• 0x00400000 — OC_SCAN_ALLOW_DEVICE_FIREWIRE, allow scanning FireWire devices.\n• 0x00800000 — OC_SCAN_ALLOW_DEVICE_SDCARD, allow scanning card reader devices.\n• 0x01000000 (bit 24) — OC_SCAN_ALLOW_DEVICE_PCI, allow scanning devices directly connected to PCI bus (e.g. VIRTIO).\n\nNote: Given the above description, 0xF0103 value is expected to allow scanning of SATA, SAS, SCSI, and NVMe devices with APFS file system, and prevent scanning of any devices with HFS or FAT32 file systems in addition to not scanning APFS file systems on USB, CD, USB, and FireWire drives. The combination reads as:\n• OC_SCAN_FILE_SYSTEM_LOCK • OC_SCAN_DEVICE_LOCK\n• OC_SCAN_ALLOW_FS_APFS\n• OC_SCAN_ALLOW_DEVICE_SATA\n• OC_SCAN_ALLOW_DEVICE_SASEX\n• OC_SCAN_ALLOW_DEVICE_SCSI • OC_SCAN_ALLOW_DEVICE_NVME";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_FILE_SYSTEM_LOCK"; ObjectID = "Wnm-4q-QJ3"; */
+"Wnm-4q-QJ3.title" = "OC_SCAN_FILE_SYSTEM_LOCK";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_NTFS"; ObjectID = "WsC-yj-V3g"; */
+"WsC-yj-V3g.title" = "OC_SCAN_ALLOW_FS_NTFS";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SCSI"; ObjectID = "X1h-DD-gjM"; */
+"X1h-DD-gjM.title" = "OC_SCAN_ALLOW_DEVICE_SCSI";
+
+/* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "XRf-Yz-PVv"; */
+"XRf-Yz-PVv.headerCell.title" = "Name";
+
+/* Class = "NSTableColumn"; headerCell.title = "Path*"; ObjectID = "XSQ-pS-WUn"; */
+"XSQ-pS-WUn.headerCell.title" = "Path*";
+
+/* Class = "NSButtonCell"; title = "Show Picker"; ObjectID = "YKi-Mp-w6e"; */
+"YKi-Mp-w6e.title" = "Show Picker";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_NVME"; ObjectID = "YQh-9A-q5Q"; */
+"YQh-9A-q5Q.title" = "OC_SCAN_ALLOW_DEVICE_NVME";
+
+/* Class = "NSTabViewItem"; label = "Debug"; ObjectID = "Yod-ne-FH8"; */
+"Yod-ne-FH8.label" = "디버그";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Show simple boot picker to allow boot entry selection."; ObjectID = "Yyf-Yd-yrP"; */
+"Yyf-Yd-yrP.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Show simple boot picker to allow boot entry selection.";
+
+/* Class = "NSButtonCell"; title = "Enable basic console (onscreen) logging"; ObjectID = "ZZP-5O-C0h"; */
+"ZZP-5O-C0h.title" = "Enable basic console (onscreen) logging";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 32 bit\nDefault value: 0\nDescription: Timeout in seconds in boot picker before automatic booting of the default boot entry. Use 0 to disable timer."; ObjectID = "Zxi-ww-dWk"; */
+"Zxi-ww-dWk.ibShadowedToolTip" = "Type: plist integer, 32 bit\nDefault value: 0\nDescription: Timeout in seconds in boot picker before automatic booting of the default boot entry. Use 0 to disable timer.";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SATA"; ObjectID = "aQY-Kx-ZCy"; */
+"aQY-Kx-ZCy.title" = "OC_SCAN_ALLOW_DEVICE_SATA";
+
+/* Class = "NSTextFieldCell"; title = "Scan Policy"; ObjectID = "aUx-rK-UTX"; */
+"aUx-rK-UTX.title" = "Scan Policy";
+
+/* Class = "NSButtonCell"; title = "Select All"; ObjectID = "b27-wQ-s5W"; */
+"b27-wQ-s5W.title" = "모두선택";
+
+/* Class = "NSButtonCell"; title = "PickerAudioAssist"; ObjectID = "cN2-ao-nCB"; */
+"cN2-ao-nCB.title" = "PickerAudioAssist";
+
+/* Class = "NSTextFieldCell"; title = "PasswordHash"; ObjectID = "cz1-6R-TEf"; */
+"cz1-6R-TEf.title" = "PasswordHash";
+
+/* Class = "NSTextFieldCell"; title = "Display Level"; ObjectID = "dam-Nc-xFX"; */
+"dam-Nc-xFX.title" = "Display Level";
+
+/* Class = "NSButtonCell"; title = "Provides predefined label images for boot entries without custom entries"; ObjectID = "dl8-kF-ipf"; */
+"dl8-kF-ipf.title" = "Provides predefined label images for boot entries without custom entries";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Produce system report on ESP folder.\nThis option will create a SysReport directory on ESP partition unless it is already present. The directory will contain ACPI and SMBIOS dumps.\n\nNote: For security reasons SysReport option is not available in RELEASE builds. Use a DEBUG build if you need this option."; ObjectID = "eFH-QH-phT"; */
+"eFH-QH-phT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Produce system report on ESP folder.\nThis option will create a SysReport directory on ESP partition unless it is already present. The directory will contain ACPI and SMBIOS dumps.\n\nNote: For security reasons SysReport option is not available in RELEASE builds. Use a DEBUG build if you need this option.";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_USB"; ObjectID = "eFc-bE-Fl5"; */
+"eFc-bE-Fl5.title" = "OC_SCAN_ALLOW_DEVICE_USB";
+
+/* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This tool will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable tool name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: File path to select UEFI tool relative to OC/Tools directory."; ObjectID = "eH6-nm-MdQ"; */
+"eH6-nm-MdQ.ibShadowedToolTip" = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This tool will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable tool name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: File path to select UEFI tool relative to OC/Tools directory.";
+
+/* Class = "NSTextFieldCell"; title = "Picker Attributes"; ObjectID = "eaZ-uU-2Tt"; */
+"eaZ-uU-2Tt.title" = "Picker Attributes";
+
+/* Class = "NSTextFieldCell"; title = "Vault"; ObjectID = "fN9-q5-dg3"; */
+"fN9-q5-dg3.title" = "Vault";
+
+/* Class = "NSTextFieldCell"; title = "DmgLoading"; ObjectID = "fVY-aJ-OPc"; */
+"fVY-aJ-OPc.title" = "DmgLoading";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable boot.efi debug log saving to OpenCore log.\n\nNote: This option only applies to 10.15.4 and newer."; ObjectID = "fcn-ha-taM"; */
+"fcn-ha-taM.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable boot.efi debug log saving to OpenCore log.\n\nNote: This option only applies to 10.15.4 and newer.";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Perform serial port initialisation.\nThis option will perform serial port initialisation within OpenCore prior to enabling (any) debug logging. Serial port configuration is defined via PCDs at compile time in gEfiMdeModulePkgTokenSpaceGuid GUID. Default values as found in MdeModulePkg.dec are as follows:\n• PcdSerialBaudRate — Baud rate: 115200.\n• PcdSerialLineControl — Line control: no parity, 8 data bits, 1 stop bit.\n\nSee more details in Debugging section."; ObjectID = "fmg-zD-rrJ"; */
+"fmg-zD-rrJ.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Perform serial port initialisation.\nThis option will perform serial port initialisation within OpenCore prior to enabling (any) debug logging. Serial port configuration is defined via PCDs at compile time in gEfiMdeModulePkgTokenSpaceGuid GUID. Default values as found in MdeModulePkg.dec are as follows:\n• PcdSerialBaudRate — Baud rate: 115200.\n• PcdSerialLineControl — Line control: no parity, 8 data bits, 1 stop bit.\n\nSee more details in Debugging section.";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nBuiltin picker supports colour arguments as a sum of foreground and background colours according to UEFI specification. The value of black background and black foreground (0) is reserved. List of colour names:\n• 0x00 — EFI_BLACK\n• 0x01 — EFI_BLUE\n• 0x02 — EFI_GREEN\n• 0x03 — EFI_CYAN\n• 0x04 — EFI_RED\n• 0x05 — EFI_MAGENTA\n• 0x06 — EFI_BROWN\n• 0x07 — EFI_LIGHTGRAY\n• 0x08 — EFI_DARKGRAY\n• 0x09 — EFI_LIGHTBLUE\n• 0x0A — EFI_LIGHTGREEN\n• 0x0B — EFI_LIGHTCYAN\n• 0x0C — EFI_LIGHTRED\n• 0x0D — EFI_LIGHTMAGENTA \n• 0x0E — EFI_YELLOW\n• 0x0F — EFI_WHITE\n• 0x00 — EFI_BACKGROUND_BLACK\n• 0x10 — EFI_BACKGROUND_BLUE\n• 0x20 — EFI_BACKGROUND_GREEN\n• 0x30 — EFI_BACKGROUND_CYAN\n• 0x40 — EFI_BACKGROUND_RED\n• 0x50 — EFI_BACKGROUND_MAGENTA\n• 0x60 — EFI_BACKGROUND_BROWN\n• 0x70 — EFI_BACKGROUND_LIGHTGRAY\nNote: This option may not work well with System text renderer. Setting a background different from black could help testing proper GOP functioning."; ObjectID = "gD0-Iz-n35"; */
+"gD0-Iz-n35.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nBuiltin picker supports colour arguments as a sum of foreground and background colours according to UEFI specification. The value of black background and black foreground (0) is reserved. List of colour names:\n• 0x00 — EFI_BLACK\n• 0x01 — EFI_BLUE\n• 0x02 — EFI_GREEN\n• 0x03 — EFI_CYAN\n• 0x04 — EFI_RED\n• 0x05 — EFI_MAGENTA\n• 0x06 — EFI_BROWN\n• 0x07 — EFI_LIGHTGRAY\n• 0x08 — EFI_DARKGRAY\n• 0x09 — EFI_LIGHTBLUE\n• 0x0A — EFI_LIGHTGREEN\n• 0x0B — EFI_LIGHTCYAN\n• 0x0C — EFI_LIGHTRED\n• 0x0D — EFI_LIGHTMAGENTA \n• 0x0E — EFI_YELLOW\n• 0x0F — EFI_WHITE\n• 0x00 — EFI_BACKGROUND_BLACK\n• 0x10 — EFI_BACKGROUND_BLUE\n• 0x20 — EFI_BACKGROUND_GREEN\n• 0x30 — EFI_BACKGROUND_CYAN\n• 0x40 — EFI_BACKGROUND_RED\n• 0x50 — EFI_BACKGROUND_MAGENTA\n• 0x60 — EFI_BACKGROUND_BROWN\n• 0x70 — EFI_BACKGROUND_LIGHTGRAY\nNote: This option may not work well with System text renderer. Setting a background different from black could help testing proper GOP functioning.";
+
+/* Class = "NSTextFieldCell"; title = "Target"; ObjectID = "hAm-Ha-Meb"; */
+"hAm-Ha-Meb.title" = "Target";
+
+/* Class = "NSButtonCell"; title = "SerialInit"; ObjectID = "hRO-hk-wy8"; */
+"hRO-hk-wy8.title" = "SerialInit";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nDifferent pickers may be configured through\nthe attribute mask containing OpenCore-reserved (BIT0~BIT15) and OEM-specific (BIT16~BIT31) values.\nCurrent OpenCore values include:\n• 0x0001 — OC_ATTR_USE_VOLUME_ICON, provides custom icons for boot entries:\nFor Tools OpenCore will try to load a custom icon and fallback to the default icon:\n– ResetNVRAM — Resources\\Image\\ResetNVRAM.icns — ResetNVRAM.icns from icons directory.\n– Tools\\<TOOL_RELATIVE_PATH>.icns — icon near the tool file with appended .icns extension.\nFor custom boot Entries OpenCore will try to load a custom icon and fallback to the volume icon or the \ndefault icon:\n– <ENTRY_PATH>.icns — icon near the entry file with appended .icns extension.\nFor all other entries OpenCore will try to load a volume icon and fallback to the default icon:\n\t– .VolumeIcon.icns  file at Preboot root for APFS. \n\t– .VolumeIcon.icns  file at volume root for other filesystems.\n\nVolume icons can be set in Finder. \n• 0x0002 — OC_ATTR_USE_DISK_LABEL_FILE, provides custom rendered titles for boot entries:  \t– .disk_label  (.disk_label_2x) file near bootloader for all filesystems. \t– <TOOL_NAME>.lbl  (<TOOL_NAME>.l2x) file near tool for Tools. Prerendered labels can be generated via disklabel utility or bless command. When disabled or missing text labels (.contentDetails or .disk_label.contentDetails) are to be rendered instead. • 0x0004 — OC_ATTR_USE_GENERIC_LABEL_IMAGE, provides predefined label images for boot entries without custom entries. May give less detail for the actual boot entry. \n• 0x0008 — OC_ATTR_USE_ALTERNATE_ICONS, changes used icon set to an alternate one if it is supported. For example, this could make a use of old-style icons with a custom background colour."; ObjectID = "hdQ-rL-KAo"; */
+"hdQ-rL-KAo.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nDifferent pickers may be configured through\nthe attribute mask containing OpenCore-reserved (BIT0~BIT15) and OEM-specific (BIT16~BIT31) values.\nCurrent OpenCore values include:\n• 0x0001 — OC_ATTR_USE_VOLUME_ICON, provides custom icons for boot entries:\n\t– .VolumeIcon.icns  file at Preboot root for APFS. \n\t– .VolumeIcon.icns  file at volume root for other filesystems.\n\t– <TOOL_NAME>.icns  file for Tools.￼ ￼ ￼\nVolume icons can be set in Finder. \n• 0x0002 — OC_ATTR_USE_DISK_LABEL_FILE, provides custom rendered titles for boot entries: \t– .disk_label  (.disk_label_2x) file near bootloader for all filesystems.\t– <TOOL_NAME.lbl  (<TOOL_NAME.l2x) file near tool for Tools.Prerendered labels can be generated via disklabel utility or bless command. When disabled or missing text labels (.contentDetails or .disk_label.contentDetails) are to be rendered instead.• 0x0004 — OC_ATTR_USE_GENERIC_LABEL_IMAGE, provides predefined label images for boot entries without custom entries. May give less detail for the actual boot entry. \n• 0x0008 — OC_ATTR_USE_ALTERNATE_ICONS, changes used icon set to an alternate one if it is supported. For example, this could make a use of old-style icons with a custom background colour.";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_ATAPI"; ObjectID = "i2m-65-2vq"; */
+"i2m-65-2vq.title" = "OC_SCAN_ALLOW_DEVICE_ATAPI";
+
+/* Class = "NSButtonCell"; title = "Download/Update tools"; ObjectID = "i6P-Lb-eX2"; */
+"i6P-Lb-eX2.title" = "다운로드/도구 업데이트";
+
+/* Class = "NSTableColumn"; headerCell.title = "Path*"; ObjectID = "jPS-Bu-Ar4"; */
+"jPS-Bu-Ar4.headerCell.title" = "Path*";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string \nFailsafe: Default\nDescription: Apple Secure Boot hardware model.\n\nSets Apple Secure Boot hardware model and policy. Specifying this value defines which operating systems will be bootable. Operating systems shipped before the specified model was released will not boot. Valid values:\n\n• Default — Recent available model, currently set to j137.\n• Disabled — No model, Secure Boot will be disabled.\n• j137 — iMacPro1,1 (December 2017) minimum macOS 10.13.2 (17C2111)\n• j680 — MacBookPro15,1 (July 2018) minimum macOS 10.13.6 (17G2112)\n• j132 — MacBookPro15,2 (July 2018) minimum macOS 10.13.6 (17G2112)\n• j174 — Macmini8,1 (October 2018) minimum macOS 10.14 (18A2063)\n• j140k — MacBookAir8,1 (October 2018) minimum macOS 10.14.1 (18B2084)\n• j780 — MacBookPro15,3 (May 2019) minimum macOS 10.14.5 (18F132)\n• j213 — MacBookPro15,4 (July 2019) minimum macOS 10.14.5 (18F2058)\n• j140a — MacBookAir8,2 (July 2019) minimum macOS 10.14.5 (18F2058)\n• j152f — MacBookPro16,1 (November 2019) minimum macOS 10.15.1 (19B2093)\n• j160 — MacPro7,1 (December 2019) minimum macOS 10.15.1 (19B88)\n• j230k — MacBookAir9,1 (March 2020) minimum macOS 10.15.3 (19D2064)\n• j214k — MacBookPro16,2 (May 2020) minimum macOS 10.15.4 (19E2269)\n• j223 — MacBookPro16,3 (May 2020) minimum macOS 10.15.4 (19E2265)\n• j215 — MacBookPro16,4 (June 2020) minimum macOS 10.15.5 (19F96)\n• j185 — iMac20,1 (August 2020) minimum macOS 10.15.6 (19G2005)\n• j185f — iMac20,2 (August 2020) minimum macOS 10.15.6 (19G2005)\n\nPlatformInfo and SecureBootModel are independent, allowing to enabling Apple Secure Boot with any SMBIOS.\nSetting SecureBootModel to any valid value but Disabled is equivalent to Medium Security of Apple Secure Boot. To achieve Full Security one will need to also specify ApECID value.\n\nEnabling Apple Secure Boot is more demanding to incorrect configurations, buggy macOS installations, and unsupported setups. Things to keep in mind:\n(a) Just like on T2 Macs you will not be able to install any unsigned kernel drivers and several signed kernel drivers including NVIDIA Web Drivers.\n(b) The list of cached drivers may be different, resulting in the need to change the list of Added or Forced kernel drivers. For example, IO80211Family cannot be injected in this case.\n(c) System volume alterations on operating systems with sealing, like macOS 11, may result in the operating system being unbootable. Do not try to disable system volume encryption unless you disable Apple Secure Boot.\n(d) If your platform requires certain settings, but they were not enabled, because the obvious issues did not trigger before, you may get boot failure. Be extra careful with IgnoreInvalidFlexRatio or HashServices.\n(e) Operating systems released before Apple Secure Boot landed (e.g. macOS 10.12 or earlier) will still boot until UEFI Secure Boot is enabled. This is so, because from Apple Secure Boot point they are treated as incompatible and are assumed to be handled by the firmware just like Microsoft Windows is.\n(f) On older CPUs (e.g. before Sandy Bridge) enabling Apple Secure Boot might cause slightly slower loading section.\n(g) Since Default value will increase with time to support the latest major release operating system, it is not recommended to use ApECID and Default value together.\n\nSometimes the already installed operating system may have outdated Apple Secure Boot manifests on the Preboot partition causing boot failure. If you see the “OCB: Apple Secure Boot prohibits this boot entry, enforcing!” message, it is likely the case. When this happens you can either reinstall the operating system or copy the manifests (files with .im4m extension, like boot.efi.j137.im4m) from /usr/standalone/i386 to /Volumes/Preboot/<UUID>/System/Library/CoreServices. Here <UUID> is your system volume identifier. For more details on how to configure Apple Secure Boot with UEFI Secure Boot refer to UEFI Secure Boot section."; ObjectID = "l6D-xS-M37"; */
+"l6D-xS-M37.ibShadowedToolTip" = "Type: plist string \nFailsafe: Default\nDescription: Apple Secure Boot hardware model.\nSets Apple Secure Boot hardware model and policy. Specifying this value defines which operating systems will be bootable. Operating systems shipped before the specified model was released will not boot. Valid values:\n\n• Default — Recent available model, currently set to j137.\n• Disabled — No model, Secure Boot will be disabled.\n• j137 — iMacPro1,1 (December 2017) minimum macOS 10.13.2 (17C2111)\n• j680 — MacBookPro15,1 (July 2018) minimum macOS 10.13.6 (17G2112)\n• j132 — MacBookPro15,2 (July 2018) minimum macOS 10.13.6 (17G2112)\n• j174 — Macmini8,1 (October 2018) minimum macOS 10.14 (18A2063)\n• j140k — MacBookAir8,1 (October 2018) minimum macOS 10.14.1 (18B2084)\n• j780 — MacBookPro15,3 (May 2019) minimum macOS 10.14.5 (18F132)\n• j213 — MacBookPro15,4 (July 2019) minimum macOS 10.14.5 (18F2058)\n• j140a — MacBookAir8,2 (July 2019) minimum macOS 10.14.5 (18F2058)\n• j152f — MacBookPro16,1 (November 2019) minimum macOS 10.15.1 (19B2093)\n• j160 — MacPro7,1 (December 2019) minimum macOS 10.15.1 (19B88)\n• j230k — MacBookAir9,1 (March 2020) minimum macOS 10.15.3 (19D2064)\n• j214k — MacBookPro16,2 (May 2020) minimum macOS 10.15.4 (19E2269)\n• j223 — MacBookPro16,3 (May 2020) minimum macOS 10.15.4 (19E2265)\n• j215 — MacBookPro16,4 (June 2020) minimum macOS 10.15.5 (19F96)\n• j185 — iMac20,1 (August 2020) minimum macOS 10.15.6 (19G2005)\n• j185f — iMac20,2 (August 2020) minimum macOS 10.15.6 (19G2005)\n\nPlatformInfo and SecureBootModel are independent, allowing to enabling Apple Secure Boot with any SMBIOS.\nSetting SecureBootModel to any valid value but Disabled is equivalent to Medium Security of Apple Secure Boot. To achieve Full Security one will need to also specify ApECID value.\n\nEnabling Apple Secure Boot is more demanding to incorrect configurations, buggy macOS installations, and unsupported setups. Things to keep in mind:\n(a) Just like on T2 Macs you will not be able to install any unsigned kernel drivers and several signed kernel drivers including NVIDIA Web Drivers.\n(b) The list of cached drivers may be different, resulting in the need to change the list of Added or Forced kernel drivers. For example, IO80211Family cannot be injected in this case.\n(c) If your platform requires certain settings, but they were not enabled, because the obvious issues did not trigger before, you may get boot failure. Be extra careful with IgnoreInvalidFlexRatio or HashServices.\n(d) Operating systems released before Apple Secure Boot landed (e.g. macOS 10.12 or earlier) will still boot until UEFI Secure Boot is enabled. This is so, because from Apple Secure Boot point they are treated as incompatible and are assumed to be handled by the firmware just like Microsoft Windows is.\n(e) On older CPUs (e.g. before Sandy Bridge) enabling Apple Secure Boot might cause slightly slower loading section.\n(f) Since Default value will increase with time to support the latest major release operating system, it is not recommended to use ApECID and Default value together.";
+
+/* Class = "NSButtonCell"; title = "EnablePassword"; ObjectID = "lLV-4d-gWP"; */
+"lLV-4d-gWP.title" = "EnablePassword";
+
+/* Class = "NSButtonCell"; title = "SkipCustomEntryCheck"; ObjectID = "mB0-8o-rL6"; */
+"mB0-8o-rL6.title" = "SkipCustomEntryCheck";
+
+/* Class = "NSButtonCell"; title = "DEBUG_VERBOSE in custom builds"; ObjectID = "mSr-7J-5Qp"; */
+"mSr-7J-5Qp.title" = "DEBUG_VERBOSE in custom builds";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_APFS"; ObjectID = "mpH-5M-L70"; */
+"mpH-5M-L70.title" = "OC_SCAN_ALLOW_FS_APFS";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_FIREWIRE"; ObjectID = "nmh-33-tbM"; */
+"nmh-33-tbM.title" = "OC_SCAN_ALLOW_DEVICE_FIREWIRE";
+
+/* Class = "NSTabViewItem"; label = "Tools"; ObjectID = "oFg-pn-DgG"; */
+"oFg-pn-DgG.label" = "Tools";
+
+/* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "oL1-jF-NNm"; */
+"oL1-jF-NNm.title" = "모두 선택 취소";
+
+/* Class = "NSTextFieldCell"; title = "SecureBootModel"; ObjectID = "oef-cz-Kqc"; */
+"oef-cz-Kqc.title" = "SecureBootModel";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nDefault value: 0\nDescription: EDK II debug level bitmask (sum) showed onscreen. Unless Target enables console (onscreen) printing, onscreen debug output will not be visible. The following levels are supported (discover more in DebugLib.h):\n• 0x00000002 — DEBUG_WARN in DEBUG, NOOPT, RELEASE. \n• 0x00000040 — DEBUG_INFO in DEBUG, NOOPT.\n• 0x00400000 — DEBUG_VERBOSE in custom builds.\n• 0x80000000 — DEBUG_ERROR in DEBUG, NOOPT, RELEASE."; ObjectID = "omf-bH-d4v"; */
+"omf-bH-d4v.ibShadowedToolTip" = "Type: plist integer, 64 bit\nDefault value: 0\nDescription: EDK II debug level bitmask (sum) showed onscreen. Unless Target enables console (onscreen) printing, onscreen debug output will not be visible. The following levels are supported (discover more in DebugLib.h):\n• 0x00000002 — DEBUG_WARN in DEBUG, NOOPT, RELEASE. \n• 0x00000040 — DEBUG_INFO in DEBUG, NOOPT.\n• 0x00400000 — DEBUG_VERBOSE in custom builds.\n• 0x80000000 — DEBUG_ERROR in DEBUG, NOOPT, RELEASE.";
+
+/* Class = "NSButtonCell"; title = "Select All"; ObjectID = "pIV-PK-mVi"; */
+"pIV-PK-mVi.title" = "모두 선택";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker.\n\nNote 1: It is known that some Lenovo laptops have a firmware bug, which makes them unbootable after performing NVRAM reset.\n\nNote2: Resetting NVRAM will also erase all the boot options otherwise not backed up with bless (e.g. Linux)."; ObjectID = "pTC-aG-QK1"; */
+"pTC-aG-QK1.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker.\n\nNote 1: It is known that some Lenovo laptops have a firmware bug, which makes them unbootable after performing NVRAM reset.\n\nNote2: Resetting NVRAM will also erase all the boot options otherwise not backed up with bless (e.g. Linux).";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data\nFailsafe: empty\nDescription: Password salt used when EnabledPassword is set."; ObjectID = "pYq-Ve-K08"; */
+"pYq-Ve-K08.ibShadowedToolTip" = "Type: plist data\nFailsafe: empty\nDescription: Password salt used when EnabledPassword is set.";
+
+/* Class = "NSTextFieldCell"; title = "Halt Level"; ObjectID = "pqr-DX-ZAM"; */
+"pqr-DX-ZAM.title" = "Halt Level";
+
+/* Class = "NSButtonCell"; title = "AllowSetDefault"; ObjectID = "qpq-Le-cti"; */
+"qpq-Le-cti.title" = "AllowSetDefault";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker."; ObjectID = "rQF-20-vFl"; */
+"rQF-20-vFl.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker.";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SDCARD"; ObjectID = "sti-pn-v4l"; */
+"sti-pn-v4l.title" = "OC_SCAN_ALLOW_DEVICE_SDCARD";
+
+/* Class = "NSButtonCell"; title = "AppleDebug"; ObjectID = "tBp-D4-d9x"; */
+"tBp-D4-d9x.title" = "AppleDebug";
+
+/* Class = "NSButtonCell"; title = "AuthRestart"; ObjectID = "tI2-d3-co4"; */
+"tI2-d3-co4.title" = "AuthRestart";
+
+/* Class = "NSButtonCell"; title = "Provides custom icons for boot entries"; ObjectID = "tLD-8o-zGU"; */
+"tLD-8o-zGU.title" = "Provides custom icons for boot entries";
+
+//* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0x6\nDescription: Sensitive data exposure bitmask (sum) to operating system.\n• 0x01 — Expose printable booter path as an UEFI variable.\n• 0x02 — Expose OpenCore version as an UEFI variable.\n• 0x04 — Expose OpenCore version in boot picker menu title.\n• 0x08 — Expose OEM information as a set of UEFI variables.\nExposed booter path points to OpenCore.efi or its booter depending on the load order. \n\nTo obtain booter path use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path\n\nTo use booter path for mounting booter volume use the following command in macOS:\nu=$(nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path | sed 's/.*GPT,\\([^,]*\\),.*/\\1/'); \\ if [ \"$u\" != \"\" ]; then sudo diskutil mount $u ; fi\n\nTo obtain OpenCore version use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version\n\nTo obtain OEM information use the following commands in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-product # SMBIOS Type1 ProductName\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-vendor # SMBIOS Type2 Manufacturer\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-board # SMBIOS Type2 ProductName"; ObjectID = "tmf-fU-Pjy"; */
+"tmf-fU-Pjy.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0x6\nDescription: Sensitive data exposure bitmask (sum) to operating system.\n• 0x01 — Expose printable booter path as an UEFI variable.\n• 0x02 — Expose OpenCore version as an UEFI variable.\n• 0x04 — Expose OpenCore version in boot picker menu title.\n• 0x08 — Expose OEM information as a set of UEFI variables.\nExposed booter path points to OpenCore.efi or its booter depending on the load order. \n\nTo obtain booter path use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path\n\nTo use booter path for mounting booter volume use the following command in macOS:\nu=$(nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path | sed 's/.*GPT,\\([^,]*\\),.*/\\1/'); \\ if [ \"$u\" != \"\" ]; then sudo diskutil mount $u ; fi\n\nTo obtain OpenCore version use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version\n\nTo obtain OEM information use the following commands in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-product # SMBIOS Type1 ProductName\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-vendor # SMBIOS Type2 Manufacturer\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-board # SMBIOS Type2 ProductName";
+
+/* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "uSO-ne-MBg"; */
+"uSO-ne-MBg.headerCell.title" = "Comment";
+
+/* Class = "NSButtonCell"; title = "Enable logging, otherwise all log is discarded"; ObjectID = "uWH-Lw-aeI"; */
+"uWH-Lw-aeI.title" = "Enable logging, otherwise all log is discarded";
+
+/* Class = "NSTabViewItem"; label = "Entries"; ObjectID = "uks-Bw-Ph4"; */
+"uks-Bw-Ph4.label" = "Entries";
+
+/* Class = "NSTabViewItem"; label = "BlessOverride"; ObjectID = "uyb-X6-nFt"; */
+"uyb-X6-nFt.label" = "BlessOverride";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable modifier hotkey handling in boot picker.\nIn addition to action hotkeys, which are partially described in UsePicker section and are normally handled by Apple BDS, there exist modifier keys, which are handled by operating system bootloader, namely boot.efi. These keys allow to change operating system behaviour by providing different boot modes.\nOn some firmwares it may be problematic to use modifier keys due to driver incompatibilities. To workaround this problem this option allows registering select hotkeys in a more permissive manner from within boot picker. Such extensions include the support of tapping on keys in addition to holding and pressing Shift along with other keys instead of just Shift alone, which is not detectible on many PS/2 keyboards. This list of known modifier hotkeys includes:\n• CMD+C+MINUS — disable board compatibility checking.\n• CMD+K — boot release kernel, similar to kcsuffix=release.\n• CMD+S — single user mode.\n• CMD+S+MINUS — disable KASLR slide, requires disabled SIP.\n• CMD+V — verbose mode.\n• Shift — safe mode."; ObjectID = "vvg-w7-KxC"; */
+"vvg-w7-KxC.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable modifier hotkey handling in boot picker.\nIn addition to action hotkeys, which are partially described in UsePicker section and are normally handled by Apple BDS, there exist modifier keys, which are handled by operating system bootloader, namely boot.efi. These keys allow to change operating system behaviour by providing different boot modes.\nOn some firmwares it may be problematic to use modifier keys due to driver incompatibilities. To workaround this problem this option allows registering select hotkeys in a more permissive manner from within boot picker. Such extensions include the support of tapping on keys in addition to holding and pressing Shift along with other keys instead of just Shift alone, which is not detectible on many PS/2 keyboards. This list of known modifier hotkeys includes:\n• CMD+C+MINUS — disable board compatibility checking.\n• CMD+K — boot release kernel, similar to kcsuffix=release.\n• CMD+S — single user mode.\n• CMD+S+MINUS — disable KASLR slide, requires disabled SIP.\n• CMD+V — verbose mode.\n• Shift — safe mode.";
+
+/* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "wFf-6v-O3P"; */
+"wFf-6v-O3P.headerCell.title" = "Arguments";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: None\nDescription: Hibernation detection mode. The following modes are supported:\n• None — Avoid hibernation for your own good.\n• Auto — Use RTC and NVRAM detection.\n• RTC — Use RTC detection.\n• NVRAM — Use NVRAM detection."; ObjectID = "wPi-6s-R0s"; */
+"wPi-6s-R0s.ibShadowedToolTip" = "Type: plist string\nFailsafe: None\nDescription: Hibernation detection mode. The following modes are supported:\n• None — Avoid hibernation for your own good.\n• Auto — Use RTC and NVRAM detection.\n• RTC — Use RTC detection.\n• NVRAM — Use NVRAM detection.";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: None\nDescription: Attempt to provide bootloader persistence.\nValid values:\n• None — do nothing.\n• Bootstrap — create or update top-priority \\EFI\\OC\\Bootstrap\\Bootstrap.efi boot option (Boot9696) in UEFI variable storage at bootloader startup. For this option to work RequestBootVarRouting is required to be enabled.\nThis option provides integration with third-party operating system installation and upgrade at the times they overwrite \\EFI\\BOOT\\BOOTx64.efi file. By creating a custom option in Bootstrap mode this file path becomes no longer used for bootstraping OpenCore.\n\nNote 1: Some firmewares may have broken NVRAM, no boot option support, or various other incompatibilities of any kind. While unlikely, the use of this option may even cause boot failure. Use at your own risk on boards known to be compatible.\n\nNote 2: Be warned that while NVRAM reset executed from OpenCore should not erase the boot option created in Bootstrap, executing NVRAM reset prior to loading OpenCore will remove it."; ObjectID = "xNT-zI-wd8"; */
+"xNT-zI-wd8.ibShadowedToolTip" = "Type: plist string\nFailsafe: None\nDescription: Attempt to provide bootloader persistence.\nValid values:\n• None — do nothing.\n• Bootstrap — create or update top-priority \\EFI\\OC\\Bootstrap\\Bootstrap.efi boot option (Boot9696) in UEFI variable storage at bootloader startup. For this option to work RequestBootVarRouting is required to be enabled.\nThis option provides integration with third-party operating system installation and upgrade at the times they overwrite \\EFI\\BOOT\\BOOTx64.efi file. By creating a custom option in Bootstrap mode this file path becomes no longer used for bootstraping OpenCore.\n\nNote 1: Some firmewares may have broken NVRAM, no boot option support, or various other incompatibilities of any kind. While unlikely, the use of this option may even cause boot failure. Use at your own risk on boards known to be compatible.\n\nNote 2: Be warned that while NVRAM reset executed from OpenCore should not erase the boot option created in Bootstrap, executing NVRAM reset prior to loading OpenCore will remove it.";
+
+/* Class = "NSTextFieldCell"; title = "TakeoffDelay"; ObjectID = "yDl-hK-Eml"; */
+"yDl-hK-Eml.title" = "TakeoffDelay";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_DEVICE_LOCK"; ObjectID = "yNo-gi-9zr"; */
+"yNo-gi-9zr.title" = "OC_SCAN_DEVICE_LOCK";
+
+/* Class = "NSTableColumn"; headerCell.title = "Auxiliary"; ObjectID = "yTI-cV-qsU"; */
+"yTI-cV-qsU.headerCell.title" = "Auxiliary";
+
+/* Class = "NSButtonCell"; title = "ApplePanic"; ObjectID = "yaU-Lw-vco"; */
+"yaU-Lw-vco.title" = "ApplePanic";
+
+/* Class = "NSButtonCell"; title = "Expose printable booter path as an UEFI variable."; ObjectID = "z6D-gM-UDa"; */
+"z6D-gM-UDa.title" = "Expose printable booter path as an UEFI variable.";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_HFS"; ObjectID = "zCH-tB-ca6"; */
+"zCH-tB-ca6.title" = "OC_SCAN_ALLOW_FS_HFS";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Hides auxiliary entries from picker menu by default. \nAn entry is considered auxiliary when at least one of the following applies:\n• Entry is macOS recovery.\n• Entry is macOS Time Machine.\n• Entry is explicitly marked as Auxiliary.\n• Entry is system (e.g. Reset NVRAM).\n\nTo see all entries picker menu needs to be reloaded in extended mode by pressing Spacebar key. Hiding auxiliary \nentries may increase boot performance for multidisk systems."; ObjectID = "zgV-bT-EgH"; */
+"zgV-bT-EgH.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Hides auxiliary entries from picker menu by default. \nAn entry is considered auxiliary when at least one of the following applies:\n• Entry is macOS recovery.\n• Entry is macOS Time Machine.\n• Entry is explicitly marked as Auxiliary.\n• Entry is system (e.g. Reset NVRAM).\n\nTo see all entries picker menu needs to be reloaded in extended mode by pressing Spacebar key. Hiding auxiliary \nentries may increase boot performance for multidisk systems.";
+
+/* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SASEX"; ObjectID = "zj4-Hs-Xjk"; */
+"zj4-Hs-Xjk.title" = "OC_SCAN_ALLOW_DEVICE_SASEX";
+
+/* Class = "NSButtonCell"; title = "DEBUG_ERROR in DEBUG, NOOPT, RELEASE"; ObjectID = "zlC-gM-dIj"; */
+"zlC-gM-dIj.title" = "DEBUG_ERROR in DEBUG, NOOPT, RELEASE";
