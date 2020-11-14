@@ -59,39 +59,34 @@ MacOS版本：big sur 11.0.1 （20B29）
 - 多核
 ![多核](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E5%A4%9A%E6%A0%B8%E6%8E%92%E5%90%8D.png)
 
+
+
 ### 我的配置
 
-- CPU：英特尔 Intel i7 10700 ✅
 
-- 主板：微星 MSI MAG B460M MORTAR 迫击炮 ✅
 
-- 内存：2 x 16G 金士顿（Kingston）DDR4 3200 骇客神条 Fury雷电系列
+| 配置             | 型号                                                         | 价格  | 购买渠道 |
+| ---------------- | ------------------------------------------------------------ | ----- | -------- |
+| CPU              | 英特尔 Intel i7 10700（9或10代cpu最好）                      | 2279  | JD自营   |
+| 主板             | 微星 MSI MAG B460M MORTAR 迫击炮✅                            | 659   | JD自营   |
+| 内存             | 2 x 16G 金士顿（Kingston）DDR4 3200 骇客神条 Fury雷电系列    | 899   | JD自营   |
+| 显卡             | 核显（我的显示器是接核显的，独立显卡未测试）✅                | 0     | JD自营   |
+| 显示器           | AOC Q2490W1 2k 60HZ                                          | 992   | JD自营   |
+| 连接线           | 山泽 4kHDMI转HDMI（京东买了毕亚兹的DP转HDMI，会闪屏，注入UUID也无解） | 22    | JD自营   |
+| 固态硬盘（m.2）  | 2 x Western Digital 西数 SN750 512G （靠近cpu的m.2接口与SATA1接口冲突，装了固态后，SATA1接口不可用） | 499x2 | JD自营   |
+| 固态硬盘（SATA） | 英睿达（Crucial）MX500 500G                                  | 355   | JD自营   |
+| 机型硬盘（SATA） | 东芝（TOSHIBA）64MB 7200RPM P300 3T                          | 433   | JD自营   |
+| wifi+蓝牙        | BCM94360CD 1750M（Fenvi T919）✅                              | 250   | 淘宝     |
+| 散热器           | 利民FS140                                                    | 209   | JD自营   |
+| 电源             | 海韵（SEASONIC）FOCUS GX750 750W电源                         | 659   | JD自营   |
+| 机箱             | 追风者 300 Air                                               | 219   | 淘宝     |
+| 散热风扇         | ID-COOLING XF-12025-SD-K 无光 x 3                            | 16x3  | 京东     |
 
-- 显卡：核显（我的显示器是接核显的，独立显卡未测试）
+除显示器外，都是双十一前购买，加上一些优惠：6724元（不包括显示器）
 
-- 显示器：AOC Q2490W1 2k 60HZ
+**如果你满足以上3️⃣点，可以参考我的配置**
 
-- 连接线：HDMI转HDMI（买的是山泽 4k的）（京东买了毕亚兹的DP转HDMI，会闪屏，注入UUID也无解）
 
-- 固态硬盘（m.2）：2 x Western Digital 西数 SN750 512G （靠近cpu的m.2接口与SATA1接口冲突，装了固态后，SATA1接口不可用）
-
-- 固态硬盘（SATA）：英睿达（Crucial）MX500 500G
-
-- 机型硬盘（SATA）：东芝（TOSHIBA）64MB 7200RPM P300 3T
-
-- 网卡：BCM94360CD 1750M（Fenvi T919）✅
-
-- 散热器：利民FS140
-
-- 电源：海韵（SEASONIC）FOCUS GX750 750W电源
-
-- 机箱：追风者 300 Air
-
-  
-
-  **如果你满足以上3点，可以参考我的配置**
-
-  
 
 ### 小白建议
 

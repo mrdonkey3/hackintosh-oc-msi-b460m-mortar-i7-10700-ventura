@@ -11,7 +11,357 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be344e86-d570-4354-80b9-37021b2a0522" name="Default Changelist" comment="首次提交.">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_Beep.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_Click.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_VoiceOver_Boot.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ar_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ar_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ar_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ar_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ar_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ar_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ar_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ca_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ca_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ca_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ca_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ca_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ca_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ca_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_cs_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_cs_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_cs_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_cs_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_cs_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_cs_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_cs_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_da_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_da_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_da_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_da_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_da_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_da_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_da_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_de_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_de_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_de_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_de_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_de_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_de_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_de_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_el_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_el_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_el_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_el_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_el_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_el_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_el_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_en_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_en_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_en_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_en_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_en_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_en_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_en_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_419_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_419_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_419_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_419_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_419_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_419_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_419_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_MX_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_MX_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_MX_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_MX_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_MX_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_MX_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_MX_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_es_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fi_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fi_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fi_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fi_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fi_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fi_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fi_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fr_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fr_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fr_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fr_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fr_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fr_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_fr_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_he_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_he_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_he_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_he_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_he_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_he_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_he_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hi_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hi_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hi_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hi_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hi_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hi_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hi_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hu_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hu_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hu_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hu_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hu_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hu_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_hu_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_id_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_id_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_id_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_id_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_id_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_id_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_id_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_it_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_it_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_it_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_it_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_it_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_it_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_it_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ja_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ja_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ja_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ja_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ja_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ja_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ja_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ko_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ko_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ko_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ko_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ko_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ko_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ko_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_nl_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_nl_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_nl_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_nl_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_nl_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_nl_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_nl_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_no_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_no_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_no_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_no_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_no_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_no_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_no_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pl_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pl_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pl_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pl_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pl_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pl_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pl_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_PT_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_PT_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_PT_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_PT_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_PT_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_PT_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_PT_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_pt_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ro_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ro_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ro_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ro_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ro_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ro_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ro_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ru_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ru_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ru_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ru_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ru_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ru_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_ru_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sk_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sk_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sk_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sk_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sk_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sk_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sk_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sv_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sv_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sv_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sv_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sv_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sv_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_sv_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_th_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_th_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_th_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_th_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_th_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_th_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_th_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_tr_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_tr_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_tr_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_tr_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_tr_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_tr_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_tr_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_CN_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_CN_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_CN_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_CN_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_CN_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_CN_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_CN_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_TW_AccountLocked.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_TW_AccountLockedTryLater.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_TW_Password.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_TW_Username.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_TW_UsernameOrPasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_TW_VoiceOverOff.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/AXEFIAudio_zh_TW_VoiceOverOn.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_VoiceOver_Boot.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_AbortTimeout.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_ChooseOS.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_Default.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_EnterPassword.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_ExecutionFailure.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_ExecutionSuccessful.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_External.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_ExternalOS.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_ExternalTool.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterB.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterC.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterD.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterE.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterF.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterG.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterH.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterI.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterJ.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterK.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterL.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterM.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterN.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterO.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterP.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterQ.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterR.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterS.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterT.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterU.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterV.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterW.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterX.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterY.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_LetterZ.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_Loading.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_OtherOS.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_PasswordAccepted.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_PasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_PasswordRetryLimit.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_Reloading.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_ResetNVRAM.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_Selected.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_ShowAuxiliary.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_Timeout.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_UEFI_Shell.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_Welcome.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_Windows.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_macOS.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_macOS_Recovery.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_macOS_TimeMachine.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_en_macOS_UpdateFw.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_AbortTimeout.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_ChooseOS.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_Default.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_EnterPassword.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_ExecutionFailure.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_ExecutionSuccessful.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_External.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_ExternalOS.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_ExternalTool.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterA.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterB.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterC.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterD.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterE.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterF.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterG.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterH.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterI.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterJ.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterK.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterL.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterM.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterN.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterO.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterP.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterQ.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterR.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterS.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterT.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterU.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterV.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterW.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterX.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterY.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_LetterZ.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_Loading.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_OtherOS.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_PasswordAccepted.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_PasswordIncorrect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_PasswordRetryLimit.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_Reloading.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_ResetNVRAM.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_Selected.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_ShowAuxiliary.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_Timeout.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_UEFI_Shell.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_Welcome.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_Windows.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_macOS.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_macOS_Recovery.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_macOS_TimeMachine.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/EFI/OC/Resources/Audio/OCEFIAudio_ru_macOS_UpdateFw.wav" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +407,12 @@
       <workItem from="1605364670818" duration="567000" />
       <workItem from="1605365428779" duration="69000" />
       <workItem from="1605365736787" duration="1806000" />
-      <workItem from="1605367611653" duration="678000" />
+      <workItem from="1605367611653" duration="1394000" />
+      <workItem from="1605370180034" duration="3000" />
+      <workItem from="1605373994937" duration="173000" />
+      <workItem from="1605374188420" duration="304000" />
+      <workItem from="1605375006453" duration="377000" />
+      <workItem from="1605376007561" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交.">
       <created>1605361954794</created>
@@ -66,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605361954794</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="首次提交">
+      <created>1605368612677</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605368612677</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,7 +448,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="首次提交." />
-    <option name="LAST_COMMIT_MESSAGE" value="首次提交." />
+    <MESSAGE value="首次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="首次提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="450" y="249" width="1663" height="974" key="DiffContextDialog" timestamp="1605363637387">
@@ -101,18 +464,18 @@
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state x="755" y="619" width="514" height="254" key="Github.ShareDialog/0.25.2560.1330@0.25.2560.1330" timestamp="1605362251317" />
-    <state x="547" y="391" key="SettingsEditor" timestamp="1605365374206">
+    <state x="446" y="401" key="SettingsEditor" timestamp="1605376064921">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state x="547" y="391" key="SettingsEditor/0.25.2560.1330@0.25.2560.1330" timestamp="1605365374206" />
-    <state x="355" y="314" key="Vcs.Push.Dialog.v2" timestamp="1605366947118">
+    <state x="446" y="401" key="SettingsEditor/0.25.2560.1330@0.25.2560.1330" timestamp="1605376064921" />
+    <state x="355" y="314" key="Vcs.Push.Dialog.v2" timestamp="1605368651109">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state x="355" y="314" key="Vcs.Push.Dialog.v2/0.25.2560.1330@0.25.2560.1330" timestamp="1605366947118" />
-    <state x="462" y="479" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605365924511">
+    <state x="355" y="314" key="Vcs.Push.Dialog.v2/0.25.2560.1330@0.25.2560.1330" timestamp="1605368651109" />
+    <state x="463" y="479" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605376076633">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state x="462" y="479" key="git4idea.remote.GitConfigureRemotesDialog/0.25.2560.1330@0.25.2560.1330" timestamp="1605365924511" />
+    <state x="463" y="479" key="git4idea.remote.GitConfigureRemotesDialog/0.25.2560.1330@0.25.2560.1330" timestamp="1605376076633" />
     <state x="283" y="599" key="git4idea.ui.GitStashDialog" timestamp="1605364067489">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
