@@ -56,7 +56,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 - ✅  接力
 - ✅  App Store
 - ✅  所有USB
-- ❌  风扇+电源
+- ❌  风扇+电源（无法检测）
 - ❓ 随航（未测试）
 - ❓ 独显（未测试）
 
@@ -496,5 +496,5 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 - 遇到的问题
 	1. 使用梯子利用终端下载依然很慢（或超时）
 		自行搜索🔍`终端配置ssr代理`
-	2. 终端代理配置好了，正常下载，但是使用idea（我用的是webstorm）将本地工程推送到GitHub上时，添加不了remote远程分支
-	    我发现原因是终端设置了代理（必须得去掉终端的代理），目前没遇到更好的解决方式^_^。
+	2. 终端代理配置好了，正常下载，但是使用idea（我用的是webstorm）将本地工程推送到GitHub上时，添加不了remote远程分支或者出现`Invalid authentication data. Connection refused.`错误
+	    我发现原因是终端设置了代理（必须得去掉终端的代理），在idea中设置代理。。。很奇怪。目前没遇到更好的解决方式^_^。
