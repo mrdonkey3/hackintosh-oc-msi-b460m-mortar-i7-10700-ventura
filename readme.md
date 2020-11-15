@@ -18,28 +18,22 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 
 - 配置参数
-
 ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE1.png)
 
 - 主界面 
-
 ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE2.png)
 
 - 核显
-
 ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE3.png)
 
 - 蓝牙-wifi-以太网
-
 ![蓝牙-wifi-以太网](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E8%93%9D%E7%89%99-wifi-%E4%BB%A5%E5%A4%AA%E7%BD%91.png)
-- 隔空投送
 
+- 隔空投送
 ![隔空投送](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%9A%94%E7%A9%BA%E6%8A%95%E9%80%81.png)
 
 - 接力
-
 ![接力](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B1.png)
-
 ![接力](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B2.png)
 
 ### 支持功能
@@ -99,9 +93,9 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 ⚠️友情提示：
 
-连接线的坑：京东买了毕亚兹的DP转HDMI，会闪屏，注入UUID无解，目前无法解决，HDMI转HDMI显示正常。
+- `连接线的坑`：京东买了毕亚兹的DP转HDMI，会闪屏，注入UUID无解，目前无法解决，HDMI转HDMI显示正常。
 
-SATA接口：如果使用两个m,2的固态，注意靠近cpu的m.2接口与SATA1接口冲突，装了固态后，SATA1接口不可用。
+- `SATA接口`：如果使用两个m,2的固态，注意靠近cpu的m.2接口与SATA1接口冲突，装了固态后，SATA1接口不可用。
 
 
 
@@ -119,11 +113,11 @@ SATA接口：如果使用两个m,2的固态，注意靠近cpu的m.2接口与SATA
 
 ### 一、准备工作：
 
-- [QCOpencoreConfig](https://github.com/ic005k/QtOpenCoreConfig)：配置文件plist编辑器（windows版）
+- [QCOpenCoreConfig](https://github.com/ic005k/QtOpenCoreConfig)：配置文件plist编辑器（windows版）
 
-- ProperTree：配置文件plist编辑器（windows版和mac都可以）
+- [ProperTree](https://github.com/corpnewt/ProperTree)：配置文件plist编辑器（windows版和mac都可以）
 
-- [https://mackie100projects.altervista.org/download/opencore-configurator-2-15-2-0/)：配置文件plist编辑器（mac版）
+- [OpenCore Configurator](https://mackie100projects.altervista.org/download/opencore-configurator-2-15-2-0/)：配置文件plist编辑器（mac版）
 
 - [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)：生成三码（主板号、序列号、UUID）
 
@@ -131,7 +125,7 @@ SATA接口：如果使用两个m,2的固态，注意靠近cpu的m.2接口与SATA
 
 - [MountEFI](https://github.com/corpnewt/MountEFI)：挂着磁盘EFI工具，也可以使用OpenConfigurator自带的方式挂着
 
-- 8G U盘
+- 8G及以上 U盘
 
 - [安装python环境](https://www.python.org/downloads/release/python-390/)：有了的话忽略
 
@@ -340,8 +334,11 @@ BIOS版本：[E7C82IMS.130](https://cn.msi.com/Motherboard/support/MAG-B460M-MOR
 ### 十、后续（写给自己看，核显+AMD独显（未测试））
 
 以下内容参考：
+
  [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties)
+ 
  [macOS BigSur 11.0安装中常见的问题及解决方法](https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-BigSur-11.0-installation.html)
+ 
  [AMD Radeon Performance Enhanced SSDT](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
 
 
@@ -352,7 +349,8 @@ BIOS版本：[E7C82IMS.130](https://cn.msi.com/Motherboard/support/MAG-B460M-MOR
 
   编辑配置文件，进入DeviceProperties/PciRoot(0x0)/Pci(0x2,0x0)/添加，将**AAPL,ig-platform-id**改成 0300C89B，（用独显输出）
 
-  摘抄自 [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties)
+  摘抄自 
+  [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties)
   
   | AAPL，ig-platform-id | 说明                                                   |
   | -------------------- | ------------------------------------------------------ |
@@ -417,13 +415,13 @@ BIOS版本：[E7C82IMS.130](https://cn.msi.com/Motherboard/support/MAG-B460M-MOR
 
   `shikigva=80`
 
-  ![](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E7%8B%AC%E6%98%BE%E7%A1%AC%E8%A7%A3%E7%A0%81.png)
+  ![独显硬解码](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E7%8B%AC%E6%98%BE%E7%A1%AC%E8%A7%A3%E7%A0%81.png)
 
   说明：`shikigva`：实现独显硬解码
   
   参考：
   
-  如遇 TV、Netflix 等带有 DRM 的视频解码黑屏问题，请尝试在启动参数中添加`shikigva=80`，[摘自macOS BigSur 11.0安装中常见的问题及解决方法](https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-BigSur-11.0-installation.html)
+  [摘自macOS BigSur 11.0安装中常见的问题及解决方法-如遇 TV、Netflix 等带有 DRM 的视频解码黑屏问题，请尝试在启动参数中添加`shikigva=80`](https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-BigSur-11.0-installation.html)
 
 
 
