@@ -39,7 +39,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 - 接力
 
   ![接力](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B1.png)
- 
+
   ![接力](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B2.png)
 
 ### 支持功能
@@ -345,9 +345,9 @@ BIOS版本：[E7C82IMS.130](https://cn.msi.com/Motherboard/support/MAG-B460M-MOR
 以下内容参考：
 
  [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties)
- 
+
  [macOS BigSur 11.0安装中常见的问题及解决方法](https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-BigSur-11.0-installation.html)
- 
+
  [AMD Radeon Performance Enhanced SSDT](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
 
 
@@ -479,5 +479,5 @@ BIOS版本：[E7C82IMS.130](https://cn.msi.com/Motherboard/support/MAG-B460M-MOR
 - 遇到的问题
 	1. 使用梯子利用终端下载依然很慢（或超时）
 		自行搜索🔍`终端配置ssr代理`
-	2.终端代理配置好了，正常下载，但是使用idea（我用的是webstorm）将本地工程推送到GitHub上时，添加不了remote远程分支
-	  我发现原因是终端设置了代理（必须得去掉终端的代理），目前没遇到更好的解决方式^_^。
+	2. 终端代理配置好了，正常下载，但是使用idea（我用的是webstorm）将本地工程推送到GitHub上时，添加不了remote远程分支
+	    我发现原因是终端设置了代理（必须得去掉终端的代理），目前没遇到更好的解决方式^_^。
