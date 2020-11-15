@@ -13,10 +13,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 - 启动画面
 
   第12s的时候有一下子闪屏，非完美主义不影响使用。
-  <video id="video" controls="" preload="none" poster="https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/boot.video_thumb.jpg">
-      <source id="mp4" src="https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/boot.mp4" type="video/mp4">
-      </video>
-
+  [启动视频](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/boot.mp4)
 
 
 
