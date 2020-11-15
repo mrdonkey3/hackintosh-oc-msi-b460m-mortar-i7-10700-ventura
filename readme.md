@@ -460,3 +460,17 @@ BIOS版本：[E7C82IMS.130](https://cn.msi.com/Motherboard/support/MAG-B460M-MOR
 [szc188](https://github.com/szc188)/**[MSI-B460M-MORTAR-10700K-5500XT-OC](https://github.com/szc188/MSI-B460M-MORTAR-10700K-5500XT-OC)**]
 
 [xiaoka-li](https://github.com/xiaoka-li)/**[Hackintosh-CVN-B460i-10100](https://github.com/xiaoka-li/Hackintosh-CVN-B460i-10100)**]
+
+
+
+### 十一、梯子
+
+[Slower](https://slower.tsnet.net/auth/register?code=qxno)：这是我正在使用的一款，支持多终端（Windows+Mac、IOS+Android）...目前使用没什么问题。
+
+欢迎填写我的推荐码：`qxno`
+
+- 遇到的问题
+	1. 使用梯子利用终端下载依然很慢（或超时）
+		自行搜索🔍`终端配置ssr代理`
+	2.终端代理配置好了，正常下载，但是使用idea（我用的是webstorm）将本地工程推送到GitHub上时，添加不了remote远程分支
+	  我发现原因是终端设置了代理（必须得去掉终端的代理），目前没遇到更好的解决方式^_^。
