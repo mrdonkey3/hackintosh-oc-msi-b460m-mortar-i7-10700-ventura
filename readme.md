@@ -11,30 +11,26 @@ OpenCore版本： [0.6.3](https://github.com/acidanthera/OpenCorePkg/releases/ta
 MacOS版本：big sur 11.0.1 （20B29）
 
 - 启动画面
-
-  第12s的时候有一下子闪屏，非完美主义不影响使用。
-  [启动视频](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/boot.mp4)
-
-
+  第12s的时候有一下子闪屏，非完美主义不影响使用。[启动视频](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/boot.mp4)
 
 - 配置参数
-![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE1.png)
+  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE1.png)
 
 - 主界面 
-![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE2.png)
+  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE2.png)
 
 - 核显
-![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE3.png)
+  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE3.png)
 
 - 蓝牙-wifi-以太网
-![蓝牙-wifi-以太网](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E8%93%9D%E7%89%99-wifi-%E4%BB%A5%E5%A4%AA%E7%BD%91.png)
+  ![蓝牙-wifi-以太网](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E8%93%9D%E7%89%99-wifi-%E4%BB%A5%E5%A4%AA%E7%BD%91.png)
 
 - 隔空投送
-![隔空投送](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%9A%94%E7%A9%BA%E6%8A%95%E9%80%81.png)
+  ![隔空投送](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%9A%94%E7%A9%BA%E6%8A%95%E9%80%81.png)
 
 - 接力
-![接力](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B1.png)
-![接力](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B2.png)
+  ![接力](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B1.png)
+  ![接力](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B2.png)
 
 ### 支持功能
 
@@ -52,13 +48,13 @@ MacOS版本：big sur 11.0.1 （20B29）
 ### GeekBench5跑分
 
 - 综合
-![综合](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/geekbench%E8%B7%91%E5%88%86.png)
+  ![综合](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/geekbench%E8%B7%91%E5%88%86.png)
 
 - 单核
-![单核](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E5%8D%95%E6%A0%B8%E6%8E%92%E5%90%8D.png)
+  ![单核](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E5%8D%95%E6%A0%B8%E6%8E%92%E5%90%8D.png)
 
 - 多核
-![多核](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E5%A4%9A%E6%A0%B8%E6%8E%92%E5%90%8D.png)
+  ![多核](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E5%A4%9A%E6%A0%B8%E6%8E%92%E5%90%8D.png)
 
 
 
@@ -447,7 +443,7 @@ BIOS版本：[E7C82IMS.130](https://cn.msi.com/Motherboard/support/MAG-B460M-MOR
 
 [bilibili UP 喵喵折App](https://space.bilibili.com/338748561?from=search&seid=8570295898912758487)
 
-[**黑果小兵的部落阁**](https://blog.daliansky.net/)
+[黑果小兵的部落阁](https://blog.daliansky.net/)
 
 [Xjn´s Blog](https://blog.xjn819.com/?p=543)
 
