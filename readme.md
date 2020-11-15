@@ -345,6 +345,14 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
    参考：[【装机教程】超详细WIN10系统安装教程，官方ISO直装与PE两种方法教程，UEFI+GUID分区与Legacy+MBR分区](https://www.bilibili.com/video/BV1DJ411D79y?from=search&seid=8570295898912758487)
 
+5. **Windows+Mac双系统时间不一致，Windows的系统时间不准**
+
+   - 在Windows的命令行工具（以管理员的身份运行）
+
+   ```bash
+   Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
+   ```
+
    
 
 
