@@ -156,7 +156,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 将debug版本的EFI文件夹负责出来到桌面（任意位置）
 
-1. 用GenSMBIOS生成三码，建议机型  iMac19,1
+1. 用GenSMBIOS生成三码（或其他方式），建议机型  iMac19,1
 
 2. 查看自己电脑的mac地址
 
@@ -164,12 +164,16 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 选择【PlatformInfo-机型平台设置】-DataHub -Generic - PlatformNVRAM
 
-| 选项                 | 填入值           |
-| -------------------- | ---------------- |
-| System Serial Number | 序列号           |
-| System UUID          | UUID             |
-| MLB                  | 主板号           |
-| ROM                  | MAC地址，不要:号 |
+![GenSMBIOS生成的结果](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E7%94%9F%E6%88%90%E4%B8%89%E7%A0%81.png)
+
+上面以供参考，请自行生成！
+
+| 选项                 | 填入值                                           |
+| -------------------- | ------------------------------------------------ |
+| System Serial Number | 序列号（Serial）                                 |
+| System UUID          | UUID（SmUUID）                                   |
+| MLB                  | 主板号（Board Serial）                           |
+| ROM                  | 电脑MAC地址（没装系统的可以保留默认的），不要:号 |
 
 更改后记得保存！！
 
