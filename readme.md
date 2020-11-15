@@ -10,6 +10,16 @@ OpenCore版本： [0.6.3](https://github.com/acidanthera/OpenCorePkg/releases/ta
 
 MacOS版本：big sur 11.0.1 （20B29）
 
+- 启动画面
+
+  第12s的时候有一下子闪屏，非完美主义不影响使用。
+  <video id="video" controls="" preload="none" poster="https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/boot.video_thumb.jpg">
+      <source id="mp4" src="https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/boot.mp4" type="video/mp4">
+      </video>
+
+
+
+
 - 配置参数
 
 ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE1.png)
@@ -63,28 +73,38 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 ### 我的配置
 
+我装的是双系统 Windows+MacOS
 
-
-| 配置             | 型号                                                         | 价格  | 购买渠道 |
-| ---------------- | ------------------------------------------------------------ | ----- | -------- |
-| CPU              | 英特尔 Intel i7 10700（9或10代cpu最好）                      | 2279  | JD自营   |
-| 主板             | 微星 MSI MAG B460M MORTAR 迫击炮✅                            | 659   | JD自营   |
-| 内存             | 2 x 16G 金士顿（Kingston）DDR4 3200 骇客神条 Fury雷电系列    | 899   | JD自营   |
-| 显卡             | 核显（我的显示器是接核显的，独立显卡未测试）✅                | 0     | JD自营   |
-| 显示器           | AOC Q2490W1 2k 60HZ                                          | 992   | JD自营   |
-| 连接线           | 山泽 4kHDMI转HDMI（京东买了毕亚兹的DP转HDMI，会闪屏，注入UUID也无解） | 22    | JD自营   |
-| 固态硬盘（m.2）  | 2 x Western Digital 西数 SN750 512G （靠近cpu的m.2接口与SATA1接口冲突，装了固态后，SATA1接口不可用） | 499x2 | JD自营   |
-| 固态硬盘（SATA） | 英睿达（Crucial）MX500 500G                                  | 355   | JD自营   |
-| 机型硬盘（SATA） | 东芝（TOSHIBA）64MB 7200RPM P300 3T                          | 433   | JD自营   |
-| wifi+蓝牙        | BCM94360CD 1750M（Fenvi T919）✅                              | 250   | 淘宝     |
-| 散热器           | 利民FS140                                                    | 209   | JD自营   |
-| 电源             | 海韵（SEASONIC）FOCUS GX750 750W电源                         | 659   | JD自营   |
-| 机箱             | 追风者 300 Air                                               | 219   | 淘宝     |
-| 散热风扇         | ID-COOLING XF-12025-SD-K 无光 x 3                            | 16x3  | 京东     |
+| 配置             | 型号                                                      | 价格  | 购买渠道 |
+| ---------------- | --------------------------------------------------------- | ----- | -------- |
+| CPU              | 英特尔 Intel i7 10700（9或10代cpu最好）                   | 2279  | JD       |
+| 主板             | 微星 MSI MAG B460M MORTAR 迫击炮✅                         | 659   | JD       |
+| 内存             | 2 x 16G 金士顿（Kingston）DDR4 3200 骇客神条 Fury雷电系列 | 899   | JD       |
+| 显卡             | 核显（我的显示器是接核显的，独立显卡未测试）✅             | 0     | JD       |
+| 显示器           | AOC Q2490W1 2k 60HZ                                       | 992   | JD       |
+| 连接线           | 山泽 4k HDMI转HDMI                                        | 22    | JD       |
+| 固态硬盘（m.2）  | 2 x Western Digital 西数 SN750 512G                       | 499x2 | JD       |
+| 固态硬盘（SATA） | 英睿达（Crucial）MX500 500G                               | 355   | JD       |
+| 机型硬盘（SATA） | 东芝（TOSHIBA）64MB 7200RPM P300 3T                       | 433   | JD       |
+| wifi+蓝牙        | BCM94360CD 1750M（Fenvi T919）✅                           | 250   | TB       |
+| 散热器           | 利民FS140                                                 | 209   | JD       |
+| 电源             | 海韵（SEASONIC）FOCUS GX750 750W电源                      | 659   | JD       |
+| 机箱             | 追风者 300 Air                                            | 219   | TB       |
+| 散热风扇         | ID-COOLING XF-12025-SD-K 无光 x 3                         | 16x3  | JD       |
 
 除显示器外，都是双十一前购买，加上一些优惠：6724元（不包括显示器）
 
+
+
 **如果你满足以上3️⃣点，可以参考我的配置**
+
+
+
+⚠️友情提示：
+
+连接线的坑：京东买了毕亚兹的DP转HDMI，会闪屏，注入UUID无解，目前无法解决，HDMI转HDMI显示正常。
+
+SATA接口：如果使用两个m,2的固态，注意靠近cpu的m.2接口与SATA1接口冲突，装了固态后，SATA1接口不可用。
 
 
 
@@ -94,26 +114,39 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 **如果不懂，建议先看上B站看一下视频，了解大致流程**
 
-[【司波图】CometLake十代Intel平台台式机Opencore黑苹果通用配置教程（附安装包](https://www.bilibili.com/video/BV1uf4y1X7MT)
+[【司波图】CometLake十代Intel平台台式机Opencore黑苹果通用配置教程（附安装包）](https://www.bilibili.com/video/BV1uf4y1X7MT)
 
-[Intel Coffee Lake平台完美黑苹果系统安装教程（Opencore+Catalina15.4）](https://www.bilibili.com/video/BV1hA411t7dr)
+[【司波图】Intel Coffee Lake平台完美黑苹果系统安装教程（Opencore+Catalina15.4）](https://www.bilibili.com/video/BV1hA411t7dr)
 
 
 
 ### 一、准备工作：
 
 - [QCOpencoreConfig](https://github.com/ic005k/QtOpenCoreConfig)：配置文件plist编辑器（windows版）
+
 - ProperTree：配置文件plist编辑器（windows版和mac都可以）
+
 - [https://mackie100projects.altervista.org/download/opencore-configurator-2-15-2-0/)：配置文件plist编辑器（mac版）
+
 - [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)：生成三码（主板号、序列号、UUID）
+
 - [GibMacOS](https://github.com/corpnewt/gibMacOS) ：下载系统镜像
+
 - [MountEFI](https://github.com/corpnewt/MountEFI)：挂着磁盘EFI工具，也可以使用OpenConfigurator自带的方式挂着
+
 - 8G U盘
+
 - [安装python环境](https://www.python.org/downloads/release/python-390/)：有了的话忽略
+
+  
+
+
 
 ### 二、制作启动U盘
 
 [官方教程](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/)【需科学上网】
+
+
 
 
 
@@ -144,38 +177,50 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 5. 属于你的启动U盘制作完成
 
-   
+
+
 
 ### 四、微星BIOS设置
 
 开机不断按F11进入，选择高级模式（F7），切换到英文版
 
-BIOS版本：E7C82IMS.130   2020/10/07
+BIOS版本：[E7C82IMS.130](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)   2020/10/07
 
 - 禁用
 
-| 英文            | 路径                             | 设置状态 |
-| --------------- | -------------------------------- | -------- |
-| Fast Boot       | Settings/Boot/Boot Configuration | Disabled |
-| MSI Fast Boot   | Settings/Boot/Boot Configuration | Disabled |
-| CFG Lock        | Overclocking/CPU Features        | Disabled |
-| Intel VT-D Tech | Overclocking/CPU Features        | Disabled |
-| IntelSGX        | Overclocking/CPU Features        | Disabled |
+| 英文                             | 路径                                   | 设置状态 |
+| -------------------------------- | -------------------------------------- | -------- |
+| Fast Boot                        | Settings/Boot/Boot Configuration       | Disabled |
+| Secure Boot                      | Settings/Security/Secure Boot          | Disabled |
+| MSI Fast Boot                    | Settings/Boot/Boot Configuration       | Disabled |
+| CFG Lock                         | Overclocking/CPU Features              | Disabled |
+| Discrete Thunderbolt(TM) Support | Settings/Advance/Intel（R）Thunderbolt | Disabled |
+| Intel VT-D Tech                  | Overclocking/CPU Features              | Disabled |
+| IntelSGX                         | Overclocking/CPU Features              | Disabled |
+| Serial/COM Port                  | 找不到，目前没发现有什么影响           |          |
+| Paraller  Port                   | 找不到，目前没发现有什么影响           |          |
+| Intel Platform Trust             | 找不到，目前没发现有什么影响           |          |
 
 
 
 - 启用
 
-| 英文                                    | 路径                                                 | 设置状态 |
-| --------------------------------------- | ---------------------------------------------------- | -------- |
-| Above 4G memory/Crypto Currentcy mining | Settings/Advanced/PCIe/PCI Sub-System Settings       | Enabled  |
-| Hyper-Threading                         | Overclocking/Advanced CPU Configuraton               | Enabled  |
-| XHCI  Hand-off                          | Settings/Advanced/USB Configuration                  | Enabled  |
-| Legacy USB Device                       | Settings/Advanced/USB Configuration                  | Enabled  |
-| Resume By USB Device                    | Settings/Advanced/Wake Up Event Setup                | Enabled  |
-| IGD Multi-Monitor                       | Settings/Advanced/intergrated Graphics Configuration | Enabled  |
+| 英文                                    | 路径                                                        | 设置状态  |
+| --------------------------------------- | ----------------------------------------------------------- | --------- |
+| Above 4G memory/Crypto Currentcy mining | Settings/Advanced/PCIe/PCI Sub-System Settings              | Enabled   |
+| Hyper-Threading                         | Overclocking/Advanced CPU Configuraton                      | Enabled   |
+| XHCI  Hand-off                          | Settings/Advanced/USB Configuration                         | Enabled   |
+| Legacy USB Device                       | Settings/Advanced/USB Configuration                         | Enabled   |
+| Resume By USB Device                    | Settings/Advanced/Wake Up Event Setup                       | Enabled   |
+| BIOS CSM/UEFI Mode                      | Settings/Advanced/                                          | UEFI      |
+| SATA Mode                               | Settings/Advanced/Integrated Peripherals/SATA Configuration | AHCI Mode |
+| Integrated Grahics Adapter              | Settings/Advanced/intergrated Graphics Configuration        | PEG       |
+| Integrated Grahics Share Memory         | Settings/Advanced/intergrated Graphics Configuration        | 64MB      |
+| IGD Multi-Monitor                       | Settings/Advanced/intergrated Graphics Configuration        | Enabled   |
 
 改完后按F10保存，此时会重新启动
+
+
 
 
 
@@ -197,9 +242,13 @@ BIOS版本：E7C82IMS.130   2020/10/07
 
 
 
+
+
 ### 六、安装完成
 
 将启动U盘的EFI分区的EFI文件夹拷贝到安装磁盘的EFI分区目录下
+
+
 
 
 
@@ -244,10 +293,14 @@ BIOS版本：E7C82IMS.130   2020/10/07
    在OC配置Resource中，自行了解
 
      
+   
+   
 
 ###  八、仍无法解决的问题
 
 1. 睡眠无法从键盘唤醒，鼠标倒是可以。
+
+
 
 
 
@@ -286,23 +339,31 @@ BIOS版本：E7C82IMS.130   2020/10/07
    
 
 
+
 ### 十、后续（写给自己看，核显+AMD独显（未测试））
+
 以下内容参考：
  [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties)
  [macOS BigSur 11.0安装中常见的问题及解决方法](https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-BigSur-11.0-installation.html)
  [AMD Radeon Performance Enhanced SSDT](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
 
+
+
+
+
 - 第一步：修改**AAPL,ig-platform-id**
 
-编辑配置文件，进入DeviceProperties/PciRoot(0x0)/Pci(0x2,0x0)/添加，将**AAPL,ig-platform-id**改成 0300C89B，（用独显输出）
+  编辑配置文件，进入DeviceProperties/PciRoot(0x0)/Pci(0x2,0x0)/添加，将**AAPL,ig-platform-id**改成 0300C89B，（用独显输出）
 
-摘抄自 [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties)
+  摘抄自 [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties)
+  
+  | AAPL，ig-platform-id | 说明                                                   |
+  | -------------------- | ------------------------------------------------------ |
+  | 07009B3E             | 当使用台式机iGPU（独显）驱动显示器时使用               |
+  | 00009B3E             | 如果它不起作用，则替代07009B3E                         |
+  | 0300C89B             | 当台式机iGPU（独显）仅用于计算任务而不驱动显示器时使用 |
 
-| AAPL，ig-platform-id | 说明                                                   |
-| -------------------- | ------------------------------------------------------ |
-| 07009B3E             | 当使用台式机iGPU（独显）驱动显示器时使用               |
-| 00009B3E             | 如果它不起作用，则替代07009B3E                         |
-| 0300C89B             | 当台式机iGPU（独显）仅用于计算任务而不驱动显示器时使用 |
+
 
 
 
@@ -340,7 +401,10 @@ BIOS版本：E7C82IMS.130   2020/10/07
     | **agdpmod=pikera** | 用于禁用Navi GPU（RX 5000系列）上的boardID，否则，您将获得黑屏。**如果您没有Navi，请不要使用**（例如Polaris和Vega卡不应该使用此功能） |
     | **-wegnoegpu**     | 用于禁用除集成英特尔iGPU之外的所有其他GPU，对于那些希望运行不支持其dGPU的较新版本的macOS的用户有用 |
     
-    
+
+
+
+
 
 - 第三步：使用Hackintool工具查看自己独显的设备地址（非必须）
 
@@ -354,13 +418,18 @@ BIOS版本：E7C82IMS.130   2020/10/07
 
   然后在DeviceProperties/项中添加
 
+  `shikigva=80`
+
+  ![](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E7%8B%AC%E6%98%BE%E7%A1%AC%E8%A7%A3%E7%A0%81.png)
+
   说明：`shikigva`：实现独显硬解码
-
+  
   参考：
-
+  
   如遇 TV、Netflix 等带有 DRM 的视频解码黑屏问题，请尝试在启动参数中添加`shikigva=80`，[摘自macOS BigSur 11.0安装中常见的问题及解决方法](https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-BigSur-11.0-installation.html)
 
-  
+
+
 
 - 第四步：释放显卡性能（非必要）
 
@@ -368,7 +437,10 @@ BIOS版本：E7C82IMS.130   2020/10/07
 
   [AMD Radeon Performance Enhanced SSDT(https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
 
-  
+
+
+
+
 
 ### 十、感谢
 
