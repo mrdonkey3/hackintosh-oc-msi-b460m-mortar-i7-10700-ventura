@@ -16,25 +16,25 @@ MacOS版本：big sur 11.0.1 （20B29）
   
   [启动视频](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/boot.mp4)
 
-- 配置参数
+- 配置
 
-  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE1.png)
+  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE.png)
 
 - 主界面 
 
-  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE2.png)
+  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%A1%8C%E9%9D%A2.png)
 
 - 核显
 
-  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE3.png)
+  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%A0%B8%E6%98%BE.png)
 
 - 蓝牙-wifi-以太网
 
-  ![蓝牙-wifi-以太网](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E8%93%9D%E7%89%99-wifi-%E4%BB%A5%E5%A4%AA%E7%BD%91.png)
+  ![蓝牙-wifi-以太网](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/Bluetooth%2Bwifi.png)
 
 - 隔空投送
 
-  ![隔空投送](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%9A%94%E7%A9%BA%E6%8A%95%E9%80%81.png)
+  ![隔空投送](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/AirDrop.png)
 
 - 接力
 
@@ -59,15 +59,15 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 - 综合
 
-  ![综合](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/geekbench%E8%B7%91%E5%88%86.png)
+  ![综合](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/GeekBench%E7%BB%BC%E5%90%88.png)
 
 - 单核
 
-  ![单核](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E5%8D%95%E6%A0%B8%E6%8E%92%E5%90%8D.png)
+  ![单核](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/GeekBench%E5%8D%95%E6%A0%B8.png)
 
 - 多核
 
-  ![多核](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E5%A4%9A%E6%A0%B8%E6%8E%92%E5%90%8D.png)
+  ![多核](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/GeekBench%E5%A4%9A%E6%A0%B8.png)
 
 
 
@@ -164,7 +164,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 选择【PlatformInfo-机型平台设置】-DataHub -Generic - PlatformNVRAM
 
-![GenSMBIOS生成的结果](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E7%94%9F%E6%88%90%E4%B8%89%E7%A0%81.png)
+![GenSMBIOS生成的结果](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E7%94%9F%E6%88%90%E4%B8%89%E7%A0%81.png)
 
 上面以供参考，请自行生成！
 
