@@ -14,33 +14,33 @@ MacOS版本：big sur 11.0.1 （20B29）
 
   第12s的时候有一下子闪屏，非完美主义不影响使用。
   
-  [启动视频](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/boot.mp4)
+  [启动视频](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/boot.mp4)
 
 - 配置
 
-  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE.png)
+  ![big sur 11.0.1 （20B29）](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE.png)
 
 - 主界面 
 
-  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%A1%8C%E9%9D%A2.png)
+  ![big sur 11.0.1 （20B29）](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%A1%8C%E9%9D%A2.png)
 
 - 核显
 
-  ![big sur 11.0.1 （20B29）](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%A0%B8%E6%98%BE.png)
+  ![big sur 11.0.1 （20B29）](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%A0%B8%E6%98%BE.png)
 
 - 蓝牙-wifi-以太网
 
-  ![蓝牙-wifi-以太网](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/Bluetooth%2Bwifi.png)
+  ![蓝牙-wifi-以太网](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/Bluetooth%2Bwifi.png)
 
 - 隔空投送
 
-  ![隔空投送](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/AirDrop.png)
+  ![隔空投送](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/AirDrop.png)
 
 - 接力
 
-  ![接力](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B1.png)
+  ![接力](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B1.png)
 
-  ![接力](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B2.png)
+  ![接力](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B2.png)
 
 ### 支持功能
 
@@ -59,15 +59,15 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 - 综合
 
-  ![综合](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/GeekBench%E7%BB%BC%E5%90%88.png)
+  ![综合](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/GeekBench%E7%BB%BC%E5%90%88.png)
 
 - 单核
 
-  ![单核](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/GeekBench%E5%8D%95%E6%A0%B8.png)
+  ![单核](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/GeekBench%E5%8D%95%E6%A0%B8.png)
 
 - 多核
 
-  ![多核](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/GeekBench%E5%A4%9A%E6%A0%B8.png)
+  ![多核](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/GeekBench%E5%A4%9A%E6%A0%B8.png)
 
 
 
@@ -164,7 +164,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 选择【PlatformInfo-机型平台设置】-DataHub -Generic - PlatformNVRAM
 
-![GenSMBIOS生成的结果](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E7%94%9F%E6%88%90%E4%B8%89%E7%A0%81.png)
+![GenSMBIOS生成的结果](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E7%94%9F%E6%88%90%E4%B8%89%E7%A0%81.png)
 
 上面以供参考，请自行生成！
 
@@ -188,7 +188,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 开机不断按F11进入，选择高级模式（F7），切换到英文版
 
-BIOS版本：[E7C82IMS.130](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)   2020/10/07
+BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)   2020/10/07
 
 - 禁用
 
@@ -428,7 +428,7 @@ BIOS版本：[E7C82IMS.130](https://cn.msi.com/Motherboard/support/MAG-B460M-MOR
 
   `shikigva=80`
 
-  ![独显硬解码](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E7%8B%AC%E6%98%BE%E7%A1%AC%E8%A7%A3%E7%A0%81.png)
+  ![独显硬解码](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E7%8B%AC%E6%98%BE%E7%A1%AC%E8%A7%A3%E7%A0%81.png)
 
   说明：`shikigva`：实现独显硬解码
   
