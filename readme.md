@@ -168,7 +168,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 选择【PlatformInfo-机型平台设置】-DataHub -Generic - PlatformNVRAM
 
-![GenSMBIOS生成的结果](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E7%94%9F%E6%88%90%E4%B8%89%E7%A0%81.png)
+![GenSMBIOS生成的结果](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E4%B8%89%E7%A0%81.png)
 
 上面以供参考，请自行生成！
 
