@@ -10,6 +10,10 @@ OpenCore版本： [0.6.3](https://github.com/acidanthera/OpenCorePkg/releases/ta
 
 MacOS版本：big sur 11.0.1 （20B29）
 
+下面的图片看不了？
+
+请参考[Github无法加载或不显示图片问题](https://www.jianshu.com/p/25e5e07b2464)
+
 - 启动画面
 
   第12s的时候有一下子闪屏，非完美主义不影响使用。
