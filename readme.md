@@ -285,6 +285,91 @@ BIOS版本：E7C82IMS.130   2020/10/07
 
    
 
+
+### 十、后续（写给自己看，核显+AMD独显（未测试））
+以下内容参考：
+ [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties)
+ [macOS BigSur 11.0安装中常见的问题及解决方法](https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-BigSur-11.0-installation.html)
+ [AMD Radeon Performance Enhanced SSDT](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
+
+- 第一步：修改**AAPL,ig-platform-id**
+
+编辑配置文件，进入DeviceProperties/PciRoot(0x0)/Pci(0x2,0x0)/添加，将**AAPL,ig-platform-id**改成 0300C89B，（用独显输出）
+
+摘抄自 [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties)
+
+| AAPL，ig-platform-id | 说明                                                   |
+| -------------------- | ------------------------------------------------------ |
+| 07009B3E             | 当使用台式机iGPU（独显）驱动显示器时使用               |
+| 00009B3E             | 如果它不起作用，则替代07009B3E                         |
+| 0300C89B             | 当台式机iGPU（独显）仅用于计算任务而不驱动显示器时使用 |
+
+
+
+- 第二步：修改**boot-args**参数
+
+  NVRAM-随机访问存储器设置/7C436110-AB2A-4BBB-A880-FE41995C9F82项中
+
+  键：boot-args
+
+  值：添加`agdpmod=pikera`，注意空格
+
+  
+
+  说明：
+
+  摘自[OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#nvram)
+
+  摘自[OpenCore 参考手册](https://oc.skk.moe/9-nvram.html)
+
+  - **通用引导参数**：
+
+    | 引导参数        | 描述                                                         |
+    | --------------- | ------------------------------------------------------------ |
+    | **-v**          | 啰嗦模式                                                     |
+    | **debug=0x100** | Debug 掩码                                                   |
+    | **keepsyms=1**  | 这是debug = 0x100的辅助设置，显示 Panic 日志调试符号         |
+    | **alcid=1**     | 用于设置AppleALC的layout-id，请参阅[支持的编解码器，](https://github.com/acidanthera/applealc/wiki/supported-codecs)以找出要用于特定系统的布局。有关更多信息，请参见[安装后页面](https://dortania.github.io/OpenCore-Post-Install/) |
+
+    
+
+  - **GPU特定的boot-args**：
+
+    | 引导参数           | 描述                                                         |
+    | ------------------ | ------------------------------------------------------------ |
+    | **agdpmod=pikera** | 用于禁用Navi GPU（RX 5000系列）上的boardID，否则，您将获得黑屏。**如果您没有Navi，请不要使用**（例如Polaris和Vega卡不应该使用此功能） |
+    | **-wegnoegpu**     | 用于禁用除集成英特尔iGPU之外的所有其他GPU，对于那些希望运行不支持其dGPU的较新版本的macOS的用户有用 |
+    
+    
+
+- 第三步：使用Hackintool工具查看自己独显的设备地址（非必须）
+
+  打开Hackintool-PCI项-找到设备名称为Navi10xxx对应的设备地址，复制。
+
+  例如：
+
+  ```shell
+  PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0) //仅供参考
+  ```
+
+  然后在DeviceProperties/项中添加
+
+  说明：`shikigva`：实现独显硬解码
+
+  参考：
+
+  如遇 TV、Netflix 等带有 DRM 的视频解码黑屏问题，请尝试在启动参数中添加`shikigva=80`，[摘自macOS BigSur 11.0安装中常见的问题及解决方法](https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-BigSur-11.0-installation.html)
+
+  
+
+- 第四步：释放显卡性能（非必要）
+
+  适用于`RX5500/5500XT`、`RX5700/RX5700XT`、`RX580`、`RX Vega64`
+
+  [AMD Radeon Performance Enhanced SSDT(https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
+
+  
+
 ### 十、感谢
 
 [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html)
