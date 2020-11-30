@@ -12,7 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="be344e86-d570-4354-80b9-37021b2a0522" name="Default Changelist" comment="首次提交.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,12 @@
       <workItem from="1605417812190" duration="2503000" />
       <workItem from="1605421350235" duration="201000" />
       <workItem from="1605421562282" duration="1002000" />
-      <workItem from="1605423511345" duration="1366000" />
+      <workItem from="1605423511345" duration="1415000" />
+      <workItem from="1605428862046" duration="464000" />
+      <workItem from="1605441663880" duration="149000" />
+      <workItem from="1605441820979" duration="79000" />
+      <workItem from="1605441903099" duration="54000" />
+      <workItem from="1605441968055" duration="436000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交.">
       <created>1605361954794</created>
@@ -184,7 +188,35 @@
       <option name="project" value="LOCAL" />
       <updated>1605424559997</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="更新readme">
+      <created>1605425006947</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605425006947</updated>
+    </task>
+    <task id="LOCAL-00018" summary="更新readme">
+      <created>1605428871708</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1605428871708</updated>
+    </task>
+    <task id="LOCAL-00019" summary="增加win+mac双系统出现时间差的解决方式">
+      <created>1605441721830</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1605441721830</updated>
+    </task>
+    <task id="LOCAL-00020" summary="更新readme">
+      <created>1605442419537</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1605442419537</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +239,7 @@
     <MESSAGE value="首次提交" />
     <MESSAGE value="去除不必要的音频文件，更新readme" />
     <MESSAGE value="增加AMD独显的使用方法（未测试）" />
+    <MESSAGE value="增加win+mac双系统出现时间差的解决方式" />
     <MESSAGE value="更新readme" />
     <option name="LAST_COMMIT_MESSAGE" value="更新readme" />
   </component>
@@ -223,14 +256,14 @@
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state x="755" y="619" width="514" height="254" key="Github.ShareDialog/0.25.2560.1330@0.25.2560.1330" timestamp="1605362251317" />
-    <state x="446" y="401" key="SettingsEditor" timestamp="1605421589354">
+    <state x="446" y="401" key="SettingsEditor" timestamp="1605442132313">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state x="446" y="401" key="SettingsEditor/0.25.2560.1330@0.25.2560.1330" timestamp="1605421589354" />
-    <state x="355" y="314" key="Vcs.Push.Dialog.v2" timestamp="1605424560895">
+    <state x="446" y="401" key="SettingsEditor/0.25.2560.1330@0.25.2560.1330" timestamp="1605442132313" />
+    <state x="355" y="314" key="Vcs.Push.Dialog.v2" timestamp="1605442423060">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state x="355" y="314" key="Vcs.Push.Dialog.v2/0.25.2560.1330@0.25.2560.1330" timestamp="1605424560895" />
+    <state x="355" y="314" key="Vcs.Push.Dialog.v2/0.25.2560.1330@0.25.2560.1330" timestamp="1605442423060" />
     <state x="463" y="479" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605419773856">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>

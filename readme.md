@@ -56,6 +56,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 - ✅  接力
 - ✅  App Store
 - ✅  所有USB
+- ✅  声卡
 - ❌  风扇+电源（无法检测）
 - ❓ 随航（未测试）
 - ❓ 独显（未测试）
@@ -90,7 +91,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 | 连接线           | 山泽 4k HDMI转HDMI                                        | 22    | JD       |
 | 固态硬盘（m.2）  | 2 x Western Digital 西数 SN750 512G                       | 499x2 | JD       |
 | 固态硬盘（SATA） | 英睿达（Crucial）MX500 500G                               | 355   | JD       |
-| 机型硬盘（SATA） | 东芝（TOSHIBA）64MB 7200RPM P300 3T                       | 433   | JD       |
+<!-- | 机型硬盘（SATA） | 东芝（TOSHIBA）64MB 7200RPM P300 3T                       | 433   | JD       | -->
 | wifi+蓝牙        | BCM94360CD 1750M（Fenvi T919）✅                           | 250   | TB       |
 | 散热器           | 利民FS140                                                 | 209   | JD       |
 | 电源             | 海韵（SEASONIC）FOCUS GX750 750W电源                      | 659   | JD       |
@@ -230,7 +231,8 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 改完后按F10保存，此时会重新启动
 
 
-
+`提示：`
+如果使用docker，BIOS设置`Intel virtual tech`为enable.
 
 
 ### 五、安装阶段
