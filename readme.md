@@ -1,12 +1,12 @@
 ### 目录结构
 
-- debug：使用OpenCore 0.6.3 debug包，体积稍大，保留啰嗦模式
-- release：使用OpenCore 0.6.3 release包，体积小，去掉啰嗦模式
+- debug：使用OpenCore  debug包，体积稍大，保留啰嗦模式
+- release：使用OpenCore  release包，体积小，去掉啰嗦模式
 - tools：hackintosh的常用工具（以mac的为主）
 
-### 黑苹果配置 
+### 黑苹果配置
 
-OpenCore版本： [0.6.3](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3) 
+OpenCore版本： [0.6.4](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.4)
 
 MacOS版本：big sur 11.0.1 （20B29）
 
@@ -24,7 +24,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 
   ![big sur 11.0.1 （20B29）](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE.png)
 
-- 主界面 
+- 主界面
 
   ![big sur 11.0.1 （20B29）](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%A1%8C%E9%9D%A2.png)
 
@@ -49,10 +49,10 @@ MacOS版本：big sur 11.0.1 （20B29）
 ### 支持功能
 
 - ✅  蓝牙-wifi（BCM94360CD）
-- ✅  以太网（需手动设置） 
+- ✅  以太网（需手动设置）
 - ✅  睡眠唤醒（鼠标唤醒）
 - ✅  核显加速
-- ✅  隔空投送 
+- ✅  隔空投送
 - ✅  接力
 - ✅  App Store
 - ✅  所有USB
@@ -74,8 +74,6 @@ MacOS版本：big sur 11.0.1 （20B29）
 - 多核
 
   ![多核](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/GeekBench%E5%A4%9A%E6%A0%B8.png)
-
-
 
 ### 我的配置
 
@@ -100,11 +98,7 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 除显示器外，都是双十一前购买，加上一些优惠：6724元（不包括显示器）
 
-
-
-**如果你满足以上3️⃣点，可以参考我的配置**
-
-
+`**如果你满足以上3️⃣点，可以参考我的配置**`
 
 ⚠️友情提示：
 
@@ -112,21 +106,19 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 - `SATA接口`：如果使用两个m,2的固态，注意靠近cpu的m.2接口与SATA1接口冲突，装了固态后，SATA1接口不可用。
 
-
-
 ### 小白建议
 
 我自己也算是个小白，先看了视频，再去看官方教程捣鼓，最后慢慢的修复问题
 
-**如果不懂，建议先看上B站看一下视频，了解大致流程**
+`**如果不懂，建议先看上B站看一下视频，了解大致流程**`
 
 [【司波图】CometLake十代Intel平台台式机Opencore黑苹果通用配置教程（附安装包）](https://www.bilibili.com/video/BV1uf4y1X7MT)
 
 [【司波图】Intel Coffee Lake平台完美黑苹果系统安装教程（Opencore+Catalina15.4）](https://www.bilibili.com/video/BV1hA411t7dr)
 
+### 一、准备工作
 
-
-### 一、准备工作：
+下面的工具若无法下载的可以在Tools目录下试图寻找
 
 - [QCOpenCoreConfig](https://github.com/ic005k/QtOpenCoreConfig)：配置文件plist编辑器（windows版）
 
@@ -144,17 +136,9 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 - [安装python环境](https://www.python.org/downloads/release/python-390/)：有了的话忽略
 
-  
-
-
-
 ### 二、制作启动U盘
 
 [官方教程](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/)【需科学上网】
-
-
-
-
 
 ### 三、享用（修改配置参数）
 
@@ -187,9 +171,6 @@ MacOS版本：big sur 11.0.1 （20B29）
 
 5. 属于你的启动U盘制作完成
 
-
-
-
 ### 四、微星BIOS设置
 
 开机不断按F11进入，选择高级模式（F7），切换到英文版
@@ -211,8 +192,6 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 | Paraller  Port                   | 找不到，目前没发现有什么影响           |          |
 | Intel Platform Trust             | 找不到，目前没发现有什么影响           |          |
 
-
-
 - 启用
 
 | 英文                                    | 路径                                                        | 设置状态  |
@@ -230,10 +209,8 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
 改完后按F10保存，此时会重新启动
 
-
 `提示：`
 如果使用docker，BIOS设置`Intel virtual tech`为enable.
-
 
 ### 五、安装阶段
 
@@ -251,17 +228,9 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
 首次安装后会进行多次自动重启，选择 Mac Installer，直至选项中有MacOS，就选择MacOS，证明装成功了
 
-
-
-
-
 ### 六、安装完成
 
 将启动U盘的EFI分区的EFI文件夹拷贝到安装磁盘的EFI分区目录下
-
-
-
-
 
 ### 七、问题修复
 
@@ -303,17 +272,9 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
    在OC配置Resource中，自行了解
 
-     
-   
-   
-
-###  八、仍无法解决的问题
+### 八、仍无法解决的问题
 
 1. 睡眠无法从键盘唤醒，鼠标倒是可以。
-
-
-
-
 
 ### 九、曾遇到棘手的问题
 
@@ -325,7 +286,7 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
    1. Opencore Configurator 是在 内核设置/添加/ 左下角一个不起眼的位置上
 
-   2. ProperTree：mac中是comand+R 
+   2. ProperTree：mac中是`comand+R`
 
 2. **无线网卡+蓝牙 BCM94360CD，在 big sur版本中蓝牙不起作用**
 
@@ -355,10 +316,6 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
    Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
    ```
 
-   
-
-
-
 ### 十、后续（写给自己看，核显+AMD独显（未测试））
 
 以下内容参考：
@@ -369,15 +326,11 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
  [AMD Radeon Performance Enhanced SSDT](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
 
-
-
-
-
 - 第一步：修改**AAPL,ig-platform-id**
 
   编辑配置文件，进入DeviceProperties/PciRoot(0x0)/Pci(0x2,0x0)/添加，将**AAPL,ig-platform-id**改成 0300C89B，（用独显输出）
 
-  摘抄自 
+  摘抄自于
   [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties)
   
   | AAPL，ig-platform-id | 说明                                                   |
@@ -386,10 +339,6 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
   | 00009B3E             | 如果它不起作用，则替代07009B3E                         |
   | 0300C89B             | 当台式机iGPU（独显）仅用于计算任务而不驱动显示器时使用 |
 
-
-
-
-
 - 第二步：修改**boot-args**参数
 
   NVRAM-随机访问存储器设置/7C436110-AB2A-4BBB-A880-FE41995C9F82项中
@@ -397,8 +346,6 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
   键：boot-args
 
   值：添加`agdpmod=pikera`，注意空格
-
-  
 
   说明：
 
@@ -415,19 +362,12 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
     | **keepsyms=1**  | 这是debug = 0x100的辅助设置，显示 Panic 日志调试符号         |
     | **alcid=1**     | 用于设置AppleALC的layout-id，请参阅[支持的编解码器，](https://github.com/acidanthera/applealc/wiki/supported-codecs)以找出要用于特定系统的布局。有关更多信息，请参见[安装后页面](https://dortania.github.io/OpenCore-Post-Install/) |
 
-    
-
   - **GPU特定的boot-args**：
 
     | 引导参数           | 描述                                                         |
     | ------------------ | ------------------------------------------------------------ |
     | **agdpmod=pikera** | 用于禁用Navi GPU（RX 5000系列）上的boardID，否则，您将获得黑屏。**如果您没有Navi，请不要使用**（例如Polaris和Vega卡不应该使用此功能） |
     | **-wegnoegpu**     | 用于禁用除集成英特尔iGPU之外的所有其他GPU，对于那些希望运行不支持其dGPU的较新版本的macOS的用户有用 |
-    
-
-
-
-
 
 - 第三步：使用Hackintool工具查看自己独显的设备地址（非必须）
 
@@ -451,21 +391,18 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
   
   [摘自macOS BigSur 11.0安装中常见的问题及解决方法-如遇 TV、Netflix 等带有 DRM 的视频解码黑屏问题，请尝试在启动参数中添加`shikigva=80`](https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-BigSur-11.0-installation.html)
 
-
-
-
 - 第四步：释放显卡性能（非必要）
 
   适用于`RX5500/5500XT`、`RX5700/RX5700XT`、`RX580`、`RX Vega64`
 
-  [AMD Radeon Performance Enhanced SSDT(https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
+  [AMD Radeon Performance Enhanced SSDT(<https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/>)
 
+### 十、升级OpenCore
 
+参考： [Updating OpenCore and macOS](https://dortania.github.io/OpenCore-Post-Install/universal/update.html)
+先把更新好的EFI放到U盘启动，U盘启动正常后再放到电脑的EFI里。
 
-
-
-
-### 十、感谢
+### 十一、感谢
 
 [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html)
 
@@ -487,16 +424,16 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
 [xiaoka-li](https://github.com/xiaoka-li)/**[Hackintosh-CVN-B460i-10100](https://github.com/xiaoka-li/Hackintosh-CVN-B460i-10100)**]
 
-
-
-### 十一、梯子
+### 十二、梯子
 
 [Slower](https://slower.tsnet.net/auth/register?code=qxno)：这是我正在使用的一款，支持多终端（Windows+Mac、IOS+Android）...目前使用没什么问题。
 
 欢迎填写我的推荐码：`qxno`
 
 - 遇到的问题
-	1. 使用梯子利用终端下载依然很慢（或超时）
-		自行搜索🔍`终端配置ssr代理`
-	2. 终端代理配置好了，正常下载，但是使用idea（我用的是webstorm）将本地工程推送到GitHub上时，添加不了remote远程分支或者出现`Invalid authentication data. Connection refused.`错误
-	    我发现原因是终端设置了代理（必须得去掉终端的代理），在idea中设置代理。。。很奇怪。目前没遇到更好的解决方式^_^。
+  
+ 1. 使用梯子利用终端下载依然很慢（或超时）
+  自行搜索🔍`终端配置ssr代理`
+
+ 2. 终端代理配置好了，正常下载，但是使用idea（我用的是webstorm）将本地工程推送到GitHub上时，添加不了remote远程分支或者出现`Invalid authentication data. Connection refused.`错误
+   我发现原因是终端设置了代理（必须得去掉终端的代理），在idea中设置代理。。。很奇怪。目前没遇到更好的解决方式。
