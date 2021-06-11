@@ -1,4 +1,4 @@
-### 目录结构
+### `目录结构
 
 - debug：使用OpenCore  debug包，体积稍大，保留啰嗦模式
 - release：使用OpenCore  release包，体积小，去掉啰嗦模式
@@ -6,9 +6,9 @@
 
 ### 黑苹果配置
 
-OpenCore版本： [0.6.4](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.4)
+OpenCore版本： [0.7.0](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.0)
 
-MacOS版本：big sur 11.0.1 （20B29）
+MacOS版本：big sur 11.4 (20F71)
 
 下面的图片看不了？
 
@@ -316,6 +316,20 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
    Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
    ```
 
+6. 在opencore的引导页手贱选择了 `cleanNVRAM`，`opencore`引导直接没了！
+
+   重启-开机连续按F11选择使用MacOS磁盘启动重新装了系统
+
+7. 在解决`问题6`后，发现`opencore`引导程序有了但是选择后提示：`OC:failed to load configuration`
+
+   解决方案：先使用一个临时的DEBUG版本的EFI启动，然后再替换RELEASE版本的EFI，重启后`opencore`即可正常引导。[OC:failed to load configuration](https://www.reddit.com/r/hackintosh/comments/k9xn9b/updated_to_064_oc_failed_to_load_configuration/)
+
+8. macOS的的EFI有问题导致启动不了，如何修改EFI配置让它重新启动？
+
+   方式一：使用之前制作的启动U盘来进入系统，然后挂载EFI分区修复EFI文件
+
+   方式二：在双系统的电脑中，在windows系统下安装`DiskGenius`工具，打开后可以看到MacOS的磁盘，选择MacOS安装的磁盘-选择EFI分区-查看文件-然后对齐进行修改。（原理是利用`DiskGenius`工具修改MacOS磁盘的EFI分区下的EFI文件）
+
 ### 十、后续（写给自己看，核显+AMD独显（未测试））
 
 以下内容参考：
@@ -399,10 +413,12 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
 ### 十、升级OpenCore
 
+！！！升级前建议备份一份当前可用的EFI文件，以备升级后无法进行系统时，可以回退到可正常启动的版本
+
 参考： [Updating OpenCore and macOS](https://dortania.github.io/OpenCore-Post-Install/universal/update.html)
 主要是用新的efi替换掉旧的efi的中必要的文件即可。
 先把更新好的EFI放到U盘启动，U盘启动正常后再放到电脑的EFI里。
-如果直接使用该项目升级的话，记在`config.plist`文件里的机型平台设置填自己的三码~~
+如果直接使用该项目升级的话，记得在`config.plist`文件里的机型平台设置填自己的三码~~
 
 ```shell
 # 在终端输入下方命令，查看oc的版本
@@ -410,6 +426,8 @@ nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version
 # 输出如下 0.6.4版本，即可
 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version	REL-064-2020-12-07
 ```
+
+注：更新后导致无法启动系统，可以参考`第九`点的问题8来解决
 
 ### 十一、感谢
 
