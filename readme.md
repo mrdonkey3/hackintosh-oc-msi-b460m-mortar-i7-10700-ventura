@@ -57,6 +57,7 @@ MacOS版本：big sur 11.4 (20F71)
 - ✅  App Store
 - ✅  所有USB
 - ✅  声卡
+- ✅ 外置摄像头 + 麦克风
 - ❌  风扇+电源（无法检测）
 - ❓ 随航（未测试）
 - ❓ 独显（未测试）
@@ -95,8 +96,8 @@ MacOS版本：big sur 11.4 (20F71)
 | 电源             | 海韵（SEASONIC）FOCUS GX750 750W电源                      | 659   | JD       |
 | 机箱             | 追风者 300 Air                                            | 219   | TB       |
 | 散热风扇         | ID-COOLING XF-12025-SD-K 无光 x 3                         | 16x3  | JD       |
-
-除显示器外，都是双十一前购买，加上一些优惠：6724元（不包括显示器）
+| 外置摄像头       | 罗技 StreamCam                                            | 579   | JD       |
+| 蓝牙鼠标         | 罗技 Master 3                                             | 473   | JD二手   |
 
 `**如果你满足以上3️⃣点，可以参考我的配置**`
 
@@ -330,6 +331,8 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
    方式二：在双系统的电脑中，在windows系统下安装`DiskGenius`工具，打开后可以看到MacOS的磁盘，选择MacOS安装的磁盘-选择EFI分区-查看文件-然后对齐进行修改。（原理是利用`DiskGenius`工具修改MacOS磁盘的EFI分区下的EFI文件）
 
+9. 发现`opencore-0.6.4`之后无法使用opencore引导，将启动盘改成安装macOS的即可进入引导界面
+
 ### 十、后续（写给自己看，核显+AMD独显（未测试））
 
 以下内容参考：
@@ -458,7 +461,6 @@ nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version
 欢迎填写我的推荐码：`qxno`
 
 - 遇到的问题
-  
  1. 使用梯子利用终端下载依然很慢（或超时）
     自行搜索🔍`终端配置ssr代理`
 
