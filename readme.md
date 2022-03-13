@@ -6,7 +6,7 @@
 
 ### 黑苹果配置
 
-OpenCore版本： [0.7.0](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.0)
+OpenCore版本： [0.7.9](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.9)
 
 MacOS版本：big sur 11.4 (20F71)
 
@@ -275,7 +275,7 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
 ### 八、仍无法解决的问题
 
-1. 睡眠无法从键盘唤醒，鼠标倒是可以。
+1. ~~睡眠无法从键盘唤醒，鼠标倒是可以。~~OC 0.7.9 已解决
 
 ### 九、曾遇到棘手的问题
 
@@ -327,11 +327,33 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
 8. macOS的的EFI有问题导致启动不了，如何修改EFI配置让它重新启动？
 
-   方式一：使用之前制作的启动U盘来进入系统，然后挂载EFI分区修复EFI文件
+   方式一：使用之前制作的启动U盘来进入系统，然后挂载EFI分区修复EFI文件；简单制作引导U盘，在另外Mac电脑有一份可用的EFI，将U盘格式化后，利用`MountEFI`挂载U盘的EFI分区，丢EFI文件夹进EFI分区里，重启狂按F11，选择U盘启动即可进入系统。
 
    方式二：在双系统的电脑中，在windows系统下安装`DiskGenius`工具，打开后可以看到MacOS的磁盘，选择MacOS安装的磁盘-选择EFI分区-查看文件-然后对齐进行修改。（原理是利用`DiskGenius`工具修改MacOS磁盘的EFI分区下的EFI文件）
 
 9. 发现`opencore-0.6.4`之后无法使用opencore引导，将启动盘改成安装macOS的即可进入引导界面
+
+10. 进入输入密码界面，发现`鼠标`和`键盘`延迟很大（卡得用不了），搜索无果，然后偶然把`主板的USB3.0`接口的`拔掉`就正常了！！！！我的USB3.0接的是Logic的摄像头，可能是由于系统识别不了导致的这个问题，遇到这个问题，可以插拔某些接口，试试有没有用。
+
+11. 屏幕彩色，无法识别正确的分辨率
+
+    config.plist，DeviceProperties/PciRoot(0x0)/Pci(0x2,0x0)
+
+    添加
+
+    ```shell
+    framebuffer-con0-enable 01000000 
+    framebuffer-con0-type 00080000 
+    framebuffer-cursormem 00000003 
+    framebuffer-fbmem 00000003 
+    framebuffer-patch-enable 01000000 
+    framebuffer-stolenmem 00003001 
+    framebuffer-unifiedmem 00000080 
+    ```
+
+12. 出现 HiiDatabaseProtocolGuid already installed in database 错误
+
+    删除OC/Drivers/HiiDatabase.efi文件即可，记得刷新快照
 
 ### 十、后续（写给自己看，核显+AMD独显（未测试））
 
@@ -417,6 +439,8 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 ### 十、升级OpenCore
 
 ！！！升级前建议备份一份当前可用的EFI文件，以备升级后无法进行系统时，可以回退到可正常启动的版本
+
+先使用Debug版没问题后再使用Release版，Debug版开头日志输出watchdog,比较容易分析出失败的问题
 
 参考： [Updating OpenCore and macOS](https://dortania.github.io/OpenCore-Post-Install/universal/update.html)
 主要是用新的efi替换掉旧的efi的中必要的文件即可。
