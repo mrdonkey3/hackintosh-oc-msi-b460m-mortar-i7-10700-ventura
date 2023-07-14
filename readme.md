@@ -6,9 +6,9 @@
 
 ### 黑苹果配置
 
-OpenCore版本： [0.7.9](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.9)
+OpenCore版本： [0.9.3](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.3)
 
-MacOS版本：big sur 11.4 (20F71)
+MacOS版本：Ventura 13.4.1 (22F82)、核显
 
 下面的图片看不了？
 
@@ -22,35 +22,13 @@ MacOS版本：big sur 11.4 (20F71)
 
 - 配置
 
-  ![big sur 11.0.1 （20B29）](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E9%85%8D%E7%BD%AE.png)
-
-- 主界面
-
-  ![big sur 11.0.1 （20B29）](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%A1%8C%E9%9D%A2.png)
-
-- 核显
-
-  ![big sur 11.0.1 （20B29）](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%A0%B8%E6%98%BE.png)
-
-- 蓝牙-wifi-以太网
-
-  ![蓝牙-wifi-以太网](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/Bluetooth%2Bwifi.png)
-
-- 隔空投送
-
-  ![隔空投送](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/AirDrop.png)
-
-- 接力
-
-  ![接力](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B1.png)
-
-  ![接力](http://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/%E6%8E%A5%E5%8A%9B2.png)
+  ![Ventura 13.4.1 (22F82)](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/Ventura%2013.4.1.png?Expires=1689334976&OSSAccessKeyId=TMP.3KhPeg8waZuct2uaDAWuGu8qZDBMa2xXdRup6MsD78qfqMwuzGjXBRM4MoJVJ1oZNp93pxG9U23ArxoiKe3zRpGRQyrxhW&Signature=fshIUN6tDkZOzurE2nYyEbC8YqQ%3D)
 
 ### 支持功能
 
 - ✅  蓝牙-wifi（BCM94360CD）
 - ✅  以太网（需手动设置）
-- ✅  睡眠唤醒（鼠标唤醒）
+- ✅  睡眠唤醒（鼠标+键盘唤醒）
 - ✅  核显加速
 - ✅  隔空投送
 - ✅  接力
@@ -58,7 +36,7 @@ MacOS版本：big sur 11.4 (20F71)
 - ✅  所有USB
 - ✅  声卡
 - ✅ 外置摄像头 + 麦克风
-- ❌  风扇+电源（无法检测）
+- ✅  风扇+温度（无法检测）
 - ❓ 随航（未测试）
 - ❓ 独显（未测试）
 
@@ -141,6 +119,9 @@ MacOS版本：big sur 11.4 (20F71)
 
 [官方教程](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/)【需科学上网】
 
+1. 
+2. 
+
 ### 三、享用（修改配置参数）
 
 下载后先使用debug版本的（有啰嗦模式），稳定后在换release版本的（体积小，关闭啰嗦模式）
@@ -213,6 +194,18 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 `提示：`
 如果使用docker，BIOS设置`Intel virtual tech`为enable.
 
+题外话：[升级BIOS](https://cn.msi.com/support/technical_details/MB_BIOS_Update)、[B460-M BIOS的文件下载](https://cn.msi.com/Motherboard/MAG-B460M-MORTAR/support#down-bios)
+
+```shell
+准备工具: U盘（FAT32格式）/ BIOS文件
+1. 制作BIOS工具盘
+   格式化U盘
+   进入微星官网搜索对应的主板并下载BIOS文件，解压放到U盘根目录中，不要放置其他任何文件夹
+2. 重启，狂按F11，进入BIOS界面
+3. 点击 [M-FLASH]，选择刚刚的制作的工具盘、点选BIOS文件夹，回车，选择文件夹下的BIOS文件
+4. 选择 [是]，即可进行BIOS的更新，更新过程中切勿关机和断电且不要拔下U盘，更新完后自动重新
+```
+
 ### 五、安装阶段
 
 1. 插上制作好的启动U盘（插到主板后面的黑色的USB2.0口！！）
@@ -238,14 +231,21 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 1. **板载2.5G网卡接入不了网络**
    系统偏好设置 -网络 - 以太网（高级）- 硬件 - 配置
 
+   ```text
    改成手动，选择速度:1000baseT、 双工:全双工、 MTU:标准1500，改完后应用即可
-
+   ```
+   
 2. **核显正常，但是屏幕闪烁**
+   
+   ```text
    dp线转hdmi会闪屏，hdmi转hdmi不会
-
+   ```
+   
 3. **系统自带的输入法，大写键不起作用**
 
+   ```text
    安装搜狗输入法后可以使用，但是切换到系统的输入法后仍不起作用
+   ```
 
 4. **关闭啰嗦模式**
 
@@ -259,19 +259,36 @@ BIOS版本：[E7C82IMS.130](http://cn.msi.com/Motherboard/support/MAG-B460M-MORT
 
 5. **将Opencore放到bios的启动项的第一位**
 
+   ```text
    BIOS中【Settings/Boot/UEFI USB Key Drive BBS Proorities】的Boot Option #1 改成 Opencore。
+   ```
 
 6. **设置默认启动磁盘**
 
+   ```text
    进入启动引导选择界面时，按contrl+enter键，下次就默认选中它了。
+   ```
 
 7. **无法调节亮度**
 
+   ```text
    安装MonitorControl软件可以调节，效果一般
+   ```
 
-8. **Opencore启动的UI**
+8. **Opencore启动的UI** [参考链接](https://dortania.github.io/OpenCore-Post-Install/cosmetic/gui.html#setting-up-opencore-s-gui)
 
-   在OC配置Resource中，自行了解
+   ```shell
+   OC 0.5.7之后的版本支持
+   0. mounted 对应磁盘的EFI分区，复制到桌面（记得备份）
+   1. 下载Resource文件https://github.com/acidanthera/OcBinaryData/tree/master/Resources,
+   2. 添加 Resources文件夹 添加到 EFI/OC
+   3. 添加OpenCanopy.efi文件 到 OC/Drivers
+   4. 使用编辑器打开config.plist
+   5. Misc -> Boot -> PickerMode: External
+      Misc -> Boot -> PickerAttributes: 17
+      Misc -> Boot -> PickerVariant: Acidanthera\GoldenGate
+   6. 刷新一下快照，增加了OpenCanopy.efi，将准备好的EFI文件夹替换EFI分区的EFI文件夹，重启即可
+   ```
 
 ### 八、仍无法解决的问题
 

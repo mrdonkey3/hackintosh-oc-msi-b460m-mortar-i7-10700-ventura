@@ -1,0 +1,60 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Mask"; ObjectID = "3Ee-Qq-8wZ"; */
+"3Ee-Qq-8wZ.headerCell.title" = "Mask";
+
+/* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "6o1-1f-ghJ"; */
+"6o1-1f-ghJ.headerCell.title" = "啟用";
+
+/* Class = "NSTableColumn"; headerCell.title = "Find"; ObjectID = "7mi-i8-NsB"; */
+"7mi-i8-NsB.headerCell.title" = "尋找";
+
+/* Class = "NSTableColumn"; headerCell.title = "Arch"; ObjectID = "82c-6J-7Bc"; */
+"82c-6J-7Bc.headerCell.title" = "架構";
+
+/* Class = "NSTableColumn"; headerCell.title = "Identifier"; ObjectID = "BvG-CB-C9w"; */
+"BvG-CB-C9w.headerCell.title" = "識別碼";
+
+/* Class = "NSTextFieldCell"; title = "ProvideMaxSlide"; ObjectID = "Dis-CN-0f1"; */
+"Dis-CN-0f1.title" = "ProvideMaxSlide";
+
+/* Class = "NSTabViewItem"; label = "Patch"; ObjectID = "N9f-29-rB5"; */
+"N9f-29-rB5.label" = "修補文件";
+
+/* Class = "NSBox"; title = "Quirks"; ObjectID = "PeB-9S-Amz"; */
+"PeB-9S-Amz.title" = "Quirks";
+
+/* Class = "NSTableColumn"; headerCell.title = "Address*"; ObjectID = "XBA-aR-mC0"; */
+"XBA-aR-mC0.headerCell.title" = "地址*";
+
+/* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "c3O-jR-hal"; */
+"c3O-jR-hal.headerCell.title" = "啟用";
+
+/* Class = "NSTableColumn"; headerCell.title = "Count"; ObjectID = "cCx-7g-cuM"; */
+"cCx-7g-cuM.headerCell.title" = "計數";
+
+/* Class = "NSTableColumn"; headerCell.title = "Skip"; ObjectID = "dwb-DP-v4I"; */
+"dwb-DP-v4I.headerCell.title" = "跳過";
+
+/* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "f4e-pW-Orc"; */
+"f4e-pW-Orc.headerCell.title" = "注釋";
+
+/* Class = "NSButtonCell"; title = "EnableForAll"; ObjectID = "hF2-W3-w6Y"; */
+"hF2-W3-w6Y.title" = "EnableForAll\n針對全部系统";
+
+/* Class = "NSTableColumn"; headerCell.title = "ReplaceMask"; ObjectID = "jK8-UP-6rI"; */
+"jK8-UP-6rI.headerCell.title" = "替換Mask";
+
+/* Class = "NSTabViewItem"; label = "MmioWhitelist"; ObjectID = "mrQ-IT-UQ3"; */
+"mrQ-IT-UQ3.label" = "MmioWhitelist記憶體映射IO白名單";
+
+/* Class = "NSTableColumn"; headerCell.title = "Replace"; ObjectID = "mtD-yq-Tub"; */
+"mtD-yq-Tub.headerCell.title" = "替換";
+
+/* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "ndf-NP-2rM"; */
+"ndf-NP-2rM.headerCell.title" = "注釋";
+
+/* Class = "NSTextFieldCell"; title = "ResizeAppleGpuBars"; ObjectID = "vF3-yh-AxN"; */
+"vF3-yh-AxN.title" = "ResizeAppleGpuBars";
+
+/* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "xEr-hF-nBr"; */
+"xEr-hF-nBr.headerCell.title" = "限制";
