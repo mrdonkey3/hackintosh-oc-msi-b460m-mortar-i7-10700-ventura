@@ -44,7 +44,7 @@ MacOS版本：Ventura 13.4.1 (22F82)、核显
 
 - 配置
 
-  ![Ventura 13.4.1 (22F82)](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/Ventura%2013.4.1.png?Expires=1689334976&OSSAccessKeyId=TMP.3KhPeg8waZuct2uaDAWuGu8qZDBMa2xXdRup6MsD78qfqMwuzGjXBRM4MoJVJ1oZNp93pxG9U23ArxoiKe3zRpGRQyrxhW&Signature=fshIUN6tDkZOzurE2nYyEbC8YqQ%3D)
+  ![Ventura 13.4.1 (22F82)](https://mrdonkey-hackintosh.oss-cn-beijing.aliyuncs.com/oc-msi-b460m-mortar-i7-10700/Ventura%2013.4.1.png)
 
 ### 支持功能
 
