@@ -10,6 +10,28 @@ OpenCore版本： [0.9.3](https://github.com/acidanthera/OpenCorePkg/releases/ta
 
 MacOS版本：Ventura 13.4.1 (22F82)、核显
 
+#### 升级内容
+
+1. opencore升级到0.9.3
+
+2. MacOS升级到13.4.1
+
+下载下来后用最新的Opencore Configurator打开EFI/OC/config.plist，用GenSMBIOS生成Mac19,1的三码或使用之前的填在[机型平台设置那个菜单下]，升级有风险，做好以前EFI的备份！
+
+#### 升级过程（0.9.3 仅供参考）：
+
+原MacOS Big Sur 11.6，opencore-0.7.9
+
+1.opencore升级到 0.9.3，成功驱动11.6的系统后
+
+2.通过gibMacOS下载MacOS 12.x安装包，将系统升级到12.x
+
+3.直接在系统内更新最新13.4.1版本
+
+4.升级完毕
+
+
+
 下面的图片看不了？
 
 请参考[Github无法加载或不显示图片问题](https://www.jianshu.com/p/25e5e07b2464)
